@@ -1,5 +1,5 @@
-  - name:   esx82_vmhba3_V7300F1   
+  - name:   esx82_vmhba5_V7300F1   
     members:   
-      - esx82_vmhba3      # NO EXISTE ESTE ALIAS
+      - esx82_vmhba5      
       - V7300F_N3_PORT4      
       - V7300F_N4_PORT4
