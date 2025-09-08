@@ -1,0 +1,28 @@
+- name: Creacion de configuracion
+  hosts: all
+  gather_facts: no
+
+  # ansible-playbook -i G720_inv.ini creacion.yml -e "arch_alias=../datos/alias_alt.yml arch_zonas=../datos/zonas_alt.yml fabric_name=FABRIC_X" 
+
+  vars:
+    arch_alias: "../datos/alias_creacion.yml"
+    arch_zonas: "../datos/zona_creacion.yml"
+    fabric_name: "FABRIC_D"
+
+  tasks:
+    - name: Ejecutar script creacion de CFG 
+      # ARG: IP, usuario, clave, arch_alias, arch_zonas, fabric_name
+      shell: >
+        ./tools/creacion.py 
+        {{ ansible_host }} 
+        {{ brocade_user }} 
+        {{ brocade_password }}  
+        {{ arch_alias }} 
+        {{ arch_zonas }} 
+        {{ fabric_name }}
+      register: resultado
+      delegate_to: localhost
+
+    - name: Mostrar salida del script
+      debug:
+        var: resultado.stdout
