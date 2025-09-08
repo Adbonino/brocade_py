@@ -1,0 +1,6 @@
+zones:   
+  - name:   AIX72_ORCLX_DESA_v1_fcs4_V7200    
+    members:   
+      - AIX72_ORCLX_DESA_v1_fcs4      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1   
