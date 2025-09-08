@@ -65,8 +65,3 @@ ones:
 ...
 ```
 
-Agregar todos las alias y zonas a la congiuracion creada, en este caso FABRIC_D 
-
-```
-#  ansible-playbook -i inv.ini agregar_cfg.yml -e "arch_alias=../datos/alias_new.yml arch_zonas=../datos/zonas_new.yml fabric_name=FABRIC_D" 
-```
