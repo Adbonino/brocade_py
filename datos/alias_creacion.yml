@@ -1,0 +1,7 @@
+aliases:
+  - name:   AIX72_ORCLX_DESA_v1_fcs4   
+    wwn:    c0:50:76:0a:43:62:00:b2
+  - name:   V7200CONTI_N1_P2   
+    wwn:    50:05:07:68:10:12:85:9d
+  - name:   V7200CONTI_N2_P1   
+    wwn:    50:05:07:68:10:11:85:a3    
