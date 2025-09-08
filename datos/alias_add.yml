@@ -1,0 +1,17 @@
+aliases:
+  - name:   AIX72_ORCLX_DESA_v1_fcs4   
+    wwn:    c0:50:76:0a:43:62:00:b2
+  - name:   V7200CONTI_N1_P2   
+    wwn:    50:05:07:68:10:12:85:9d
+  - name:   V7200CONTI_N2_P1   
+    wwn:    50:05:07:68:10:11:85:a3  
+  - name:   SVC_V9000_N1_PORT_7_2
+    wwn:    50:05:07:68:0c:52:a3:a2
+  - name:   SVC_V9000_N2_PORT_7_2
+    wwn:    50:05:07:68:0c:52:a3:68
+  - name:   SVC_V9000Conti_N1_PORT_3_3   
+    wwn:    50:05:07:68:0c:13:a3:a2
+  - name:   SVC_V9000Conti_N1_PORT_4_4   
+    wwn:    50:05:07:68:0c:24:a3:a2
+  - name:   AIX72_ORCLX_DESA_v2_fcs4   
+    wwn:    c0:50:76:0a:43:62:00:b4
