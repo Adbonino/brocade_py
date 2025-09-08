@@ -1,0 +1,13 @@
+zones:   
+  - name:   AIX72_ORCLX_DESA_v1_fcs4_V9000   
+    members:   
+      - AIX72_ORCLX_DESA_v1_fcs4      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4
+  - name:   AIX72_ORCLX_DESA_v2_fcs4_V7200   
+    members:   
+      - AIX72_ORCLX_DESA_v2_fcs4      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1  
