@@ -16,10 +16,10 @@
         ./tools/creacion.py 
         {{ ansible_host }} 
         {{ brocade_user }} 
-        {{ brocade_password }}  
+        {{ brocade_password }}
+        {{ fabric_name }}
         {{ arch_alias }} 
         {{ arch_zonas }} 
-        {{ fabric_name }}
       register: resultado
       delegate_to: localhost
 
