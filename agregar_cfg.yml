@@ -13,13 +13,15 @@
     - name: Ejecutar script creacion de CFG 
       # ARG: IP, usuario, clave, arch_alias, arch_zonas, fabric_name
       shell: >
-        ./tools/agregar.py 
+        ./agregar.py 
         {{ ansible_host }} 
         {{ brocade_user }} 
         {{ brocade_password }}
         {{ fabric_name }}
         {{ arch_alias }} 
-        {{ arch_zonas }} 
+        {{ arch_zonas }}
+      args:
+        chdir: ./tools
       register: resultado
       delegate_to: localhost
 
