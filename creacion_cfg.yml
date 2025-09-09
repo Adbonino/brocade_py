@@ -13,7 +13,7 @@
     - name: Ejecutar script creacion de CFG 
       # ARG: IP, usuario, clave, arch_alias, arch_zonas, fabric_name
       shell: >
-        ./tools/creacion.py 
+        ./creacion.py 
         {{ ansible_host }} 
         {{ brocade_user }} 
         {{ brocade_password }}
