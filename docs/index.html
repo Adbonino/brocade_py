@@ -3,15 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mi página con Tailwind</title>
-  <!-- Tailwind CDN -->
+  <title>Navbar con Tailwind</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-  <div class="bg-white p-8 rounded shadow-lg text-center">
-    <h1 class="text-4xl font-bold mb-4 text-blue-600">¡Hola, Tailwind en GitHub Pages!</h1>
-    <p class="text-gray-700">Esta es una página estática usando Tailwind CSS.</p>
-  </div>
+<body>
+  <nav class="bg-blue-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="#" class="text-xl font-bold">MiSitio</a>
+        </div>
+        <!-- Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#" class="hover:bg-blue-700 px-3 py-2 rounded">Inicio</a>
+          <a href="#" class="hover:bg-blue-700 px-3 py-2 rounded">Servicios</a>
+          <a href="#" class="hover:bg-blue-700 px-3 py-2 rounded">Nosotros</a>
+          <a href="#" class="hover:bg-blue-700 px-3 py-2 rounded">Contacto</a>
+        </div>
+        <!-- Botón menú móvil -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="hidden md:hidden px-2 pt-2 pb-3 space-y-1 bg-blue-700">
+      <a href="#" class="block px-3 py-2 rounded hover:bg-blue-800">Inicio</a>
+      <a href="#" class="block px-3 py-2 rounded hover:bg-blue-800">Servicios</a>
+      <a href="#" class="block px-3 py-2 rounded hover:bg-blue-800">Nosotros</a>
+      <a href="#" class="block px-3 py-2 rounded hover:bg-blue-800">Contacto</a>
+    </div>
+
+  <script>
+    // Script para alternar menú móvil
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
 </body>
 </html>
+
 
