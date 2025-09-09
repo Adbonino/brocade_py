@@ -20,6 +20,8 @@
         {{ fabric_name }}
         {{ arch_alias }} 
         {{ arch_zonas }} 
+      arg:
+        chdir: ./tools
       register: resultado
       delegate_to: localhost
 
