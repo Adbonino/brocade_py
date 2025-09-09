@@ -31,11 +31,6 @@ with open(arch_zonas , "r") as file:
     zona_data = yaml.safe_load(file)
     zonas = zona_data.get("zones", [])
 
-# === Configuración de conexión ===
-host = "10.82.1.90"
-usuario = "admin"
-clave = "passw0rd"
-
 print("*************************************")
 print("Abriendo Conexion ...")
 # === Conexión SSH ===
