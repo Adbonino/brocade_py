@@ -10,7 +10,7 @@ if len(sys.argv) != 7:
     print("Uso: script.py host usuario clave fabric_name alias_add.yml zonas_add.yml")
     sys.exit(1)
 
-# === Configuración de conexión ===
+# === Configuración de variables ===
 host = sys.argv[1]
 usuario = sys.argv[2]
 clave = sys.argv[3]
@@ -31,12 +31,6 @@ with open(arch_zonas , "r") as file:
     zona_data = yaml.safe_load(file)
     zonas = zona_data.get("zones", [])
 
-# === Configuración de conexión ===
-host = sys.argv[1]
-usuario = sys.argv[2]
-clave = sys.argv[3]
-
-
 print("*************************************")
 print("Abriendo Conexion ...")
 # === Conexión SSH ===
@@ -51,7 +45,7 @@ if shell.recv_ready():
     shell.recv(1000)
 
 print("*************************************")
-print("Creaondo Alias ...")
+print("Creando Alias ...")
 # === Crear alias en bucle ===
 for alias in aliases:
     nombre = alias["name"]
@@ -68,7 +62,7 @@ for zona in zonas:
     miembros = zona["members"]
 
     if miembros:
-        #miembros_str = ";".join(f'"{m}"' for m in miembros)
+        # miembros_str = ";".join(f'"{m}"' for m in miembros)
         miembros_str = ";".join(f'{m}' for m in miembros)
         comando = f'zonecreate "{zona_name}", "{miembros_str}"'
         enviar_comando(shell, comando)
@@ -124,7 +118,7 @@ output += shell.recv(5000).decode('utf-8')
 print(output)
 
 print("*************************************")
-print("Cerrando configuracion ...")
+print("Cerrando sesion ...")
 # === Cerrar sesión ===
 shell.send("exit\n")
 cliente.close()
