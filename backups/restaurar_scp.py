@@ -31,6 +31,19 @@ shell.send(f'{SERVER_PASS}\n')
 time.sleep(15)
 
 output = shell.recv(50000).decode('utf-8')
+print("Salida configdownload:")
 print(output)
+
+# Enviar comando reboot
+shell.send('reboot\n')
+time.sleep(1)
+
+# Confirmar reboot si el switch pide confirmación
+shell.send('y\n')
+
+print("Reboot enviado")
+
+time.sleep(5)  # esperar un poco
+
 
 client.close()
