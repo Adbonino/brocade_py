@@ -1,0 +1,1917 @@
+zones:       
+  - name:   AIX72_ORCLX_DESA_v2_fcs4_V9000   
+    members:   
+      - AIX72_ORCLX_DESA_v2_fcs4      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4
+  - name: AIX72_ORCLX_PROD_V1_fcs1_V7300F   
+    members:   
+      - Orclx72_Prod_VIOS1_Fcs1      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4
+  - name: AIX72_ORCLX_PROD_V1_fcs1_V7300F1   
+    members:   
+      - Orclx72_Prod_VIOS1_Fcs1       
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4   
+  - name:   AIX72_ORCLX_PROD_V2_fcs1_V7300F   
+    members:   
+     - Orclx72_Prod_VIOS2_Fcs1      
+     - V7300F_N1_PORT4      
+     - V7300F_N2_PORT4  
+  - name:   AIX72_ORCLX_PROD_V2_fcs1_V7300F1   
+    members:   
+     - Orclx72_Prod_VIOS2_Fcs1      
+     - V7300F_N3_PORT4      
+     - V7300F_N4_PORT4   
+  - name:   AIX73_DWH_HML_v1_fcs1_V7300F   
+    members:   
+     - AIX73_DWH_HML_v1_fcs1      
+     - V7300F_N1_PORT4      
+     - V7300F_N2_PORT4
+  - name:   AIX73_DWH_HML_v1_fcs1_V7300F1   
+    members:   
+     - AIX73_DWH_HML_v1_fcs1           
+     - V7300F_N3_PORT4      
+     - V7300F_N4_PORT4   
+  - name:   AIX73_DWH_HML_v2_fcs1_V7300F   
+    members:   
+      - AIX73_DWH_HML_v2_fcs1      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4 
+ - name:   AIX73_DWH_HML_v2_fcs1_V7300F1   
+    members:   
+      - AIX73_DWH_HML_v2_fcs1            
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4   
+  - name:   AIX73_DWH_PRD_34_V7300F   
+    members:   
+      - AIX73_DWH_PRD_34      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4  
+  - name:   AIX73_DWH_PRD_34_V7300F1   
+    members:   
+      - AIX73_DWH_PRD_34            
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4   
+  - name:   AIX73_DWH_PRD_36_V7300F   
+    members:   
+      - AIX73_DWH_PRD_36      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4  
+  - name:   AIX73_DWH_PRD_36_V7300F1   
+    members:   
+      - AIX73_DWH_PRD_36            
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4   
+  - name:   AIX_DELFOS_DESA_v1_fcs1_V7300F   
+    members:   
+      - AIX73_DELFOS_DESA_v1_fcs1      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4  
+  - name:   AIX_DELFOS_DESA_v1_fcs1_V7300F1   
+    members:   
+      - AIX73_DELFOS_DESA_v1_fcs1            
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4      
+  - name:   AIX_DELFOS_DESA_v2_fcs1_V7300F   
+    members:   
+      - AIX73_DELFOS_DESA_v2_fcs1
+      - V7300F_N1_PORT4
+      - V7300F_N2_PORT4
+  - name:   AIX_DELFOS_DESA_v2_fcs1_V7300F1   
+    members:   
+      - AIX73_DELFOS_DESA_v2_fcs1
+      -   V7300F_N3_PORT4
+      -   V7300F_N4_PORT4  
+  - name:   PRDP10_VIOS1_C1_V7300F   
+    members:   
+      - PRDP10_VIOS1_C1
+      -   V7300F_N1_PORT4
+      -   V7300F_N2_PORT4               
+  - name:   PRDP10_VIOS1_C1_V7300F1   
+    members:   
+      - PRDP10_VIOS1_C1
+      -   V7300F_N3_PORT4
+      -   V7300F_N4_PORT4               
+  - name:   PRDP10_VIOS2_C1_V7300F   
+    members:   
+      - PRDP10_VIOS2_C1   
+      -   V7300F_N1_PORT4
+      -   V7300F_N2_PORT4               
+  - name:   PRDP10_VIOS2_C1_V7300F1   
+    members:   
+      - PRDP10_VIOS2_C1
+      -   V7300F_N3_PORT4
+      -   V7300F_N4_PORT4               
+  - name:   PRDe950_VIOS1_C8_T2_V7300F   
+    members:   
+      - PRDe950_VIOS1_C8_T2
+      -   V7300F_N1_PORT4
+      -   V7300F_N2_PORT4
+  - name:   PRDe950_VIOS1_C8_T2_V7300F1   
+    members:   
+      - PRDe950_VIOS1_C8_T2
+      - V7300F_N3_PORT4
+      - V7300F_N4_PORT4   
+  - name:   PRDe950_VIOS2_C11_T2_V7300F   
+    members:   
+      - PRDe950_VIOS2_C11_T2
+      -   V7300F_N1_PORT4
+      -   V7300F_N2_PORT4
+  - name:   PRDe950_VIOS2_C11_T2_V7300F1   
+    members:   
+      - PRDe950_VIOS2_C11_T2
+      -   V7300F_N3_PORT4
+      -   V7300F_N4_PORT4  
+  - name:   REP_V7300F1PROD_FS9100CONTI   
+    members:   
+      - V7300F_N3_PORT6_REP
+      -   V7300F_N4_PORT6_REP
+      -   FS9100_Contix86_C2_P4
+      -   FS9100_Contix86_C1_P4   
+  - name:   REP_V7300F1PROD_V7200FCONTI   
+    members:   
+      - V7200CONTI_N1_P4
+      -   V7300F_N3_PORT6_REP
+      -   V7300F_N4_PORT6_REP   
+  - name:   REP_V7300PROD_FS9100CONTI   
+    members:   
+      - V7300F_N1_PORT6_REP
+      -   V7300F_N2_PORT6_REP
+      -   FS9100_Contix86_C2_P4
+      -   FS9100_Contix86_C1_P4         
+  - name:   REP_V7300PROD_V7200FCONTI   
+    members:   
+      - V7200CONTI_N1_P4
+      -   V7300F_N1_PORT6_REP
+      -   V7300F_N2_PORT6_REP               
+  - name:   RHAAP1P10_V1_FCS1_V7300F   
+    members:   
+      - RHAAP1P10_V1_FCS1
+      -   V7300F_N1_PORT4
+      -   V7300F_N2_PORT4               
+  - name:   RHAAP1P10_V1_FCS1_V7300F1   
+    members:   
+      - RHAAP1P10_V1_FCS1
+      -   V7300F_N3_PORT4
+      -   V7300F_N4_PORT4               
+  - name:   RHAAP1P10_V2_FCS1_V7300F   
+    members:   
+      - RHAAP1P10_V2_FCS1
+      -   V7300F_N1_PORT4
+      -   V7300F_N2_PORT4               
+  - name:   RHAAP1P10_V2_FCS1_V7300F1   
+    members:   
+      - RHAAP1P10_V2_FCS1
+      -   V7300F_N3_PORT4
+      -   V7300F_N4_PORT4               
+  - name:   RHAAP2P10_V1_FCS1_V7300F   
+    members:   
+      - RHAAP2P10_V1_FCS1
+      -   V7300F_N1_PORT4
+      -   V7300F_N2_PORT4               
+  - name:   RHAAP2P10_V1_FCS1_V7300F1   
+    members:   
+      - RHAAP2P10_V1_FCS1
+      -   V7300F_N3_PORT4
+      -   V7300F_N4_PORT4               
+  - name:   RHAAP2P10_V2_FCS1_V7300F   
+    members:   
+      - RHAAP2P10_V2_FCS1
+      -   V7300F_N1_PORT4
+      -   V7300F_N2_PORT4               
+  - name:   RHAAP2P10_V2_FCS1_V7300F1   
+    members:   
+      - RHAAP2P10_V2_FCS1
+      -   V7300F_N3_PORT4   
+      -   V7300F_N4_PORT4               
+  - name:   RHAAP3P10_V1_FCS1_V7300F   
+    members:   
+      - RHAAP3P10_V1_FCS1
+      -   V7300F_N1_PORT4
+      -   V7300F_N2_PORT4               
+  - name:   RHAAP3P10_V1_FCS1_V7300F1   
+    members:   
+      - RHAAP3P10_V1_FCS1
+      -   V7300F_N3_PORT4
+      -   V7300F_N4_PORT4               
+  - name:   RHAAP3P10_V2_FCS1_V7300F   
+    members:   
+      -   RHAAP3P10_V2_FCS1
+      -   V7300F_N1_PORT4
+      -   V7300F_N2_PORT4               
+  - name:   RHAAP3P10_V2_FCS1_V7300F1   
+    members:   
+      -   RHAAP3P10_V2_FCS1
+      -   V7300F_N3_PORT4
+      -   V7300F_N4_PORT4               
+  - name:   Replica_V9000_FS9500   
+    members:   
+      -   FS9500_Replica_C1P4
+      -   FS9500_Replica_C1P4_F   
+      -   FS9500_Replica_C2P4
+      -   FS9500_Replica_C2P4_F
+      -   PortReplica_V9000_SVC1   
+  - name:   V7300_INTRACLUSTER   
+    members:   
+      - V7300F_N1_PORT2
+      -   V7300F_N2_PORT2
+      -   V7300F_N3_PORT2
+      -   V7300F_N4_PORT2         
+  - name:   VEAAMPROXY_SVC_V9000_CONTI   
+    members:   
+      - SVC_V9000_N1_PORT_7_2
+      -   SVC_V9000_N2_PORT_7_2
+      -   SVC_V9000Conti_N1_PORT_3_3
+      -   SVC_V9000Conti_N1_PORT_4_4
+      -   VEEAMPROXY_CONTI_P1 
+  - name:   VEEAMPROXY_FS9100_CONTI   
+    members:   
+      - FS9100_Contix86_C1_P2      
+      - FS9100_Contix86_C2_P2      
+      - VEEAMPROXY_CONTI_P1               
+  - name:   VEEAMPROXY_V7200CONTI_P1   
+    members:   
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1      
+      - VEEAMPROXY_CONTI_P1               
+  - name:   VEEAM_BKPPXY1_P2_V7300F   
+    members:   
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4      
+      - veeam_bkpPXY1_hba2               
+  - name:   VEEAM_BKPPXY1_P2_V7300F1   
+    members:   
+      - veeam_bkpPXY1_hba2      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   VEEAM_BKPPXY2_P2_V7300F   
+    members:   
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4      
+      - veeam_bkpPXY2_hba2               
+  - name:   VEEAM_BKPPXY2_P2_V7300F1   
+    members:   
+      - veeam_bkpPXY2_hba2      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4   
+
+               
+
+  - name:   esx01_V9100conti_vmhba67   
+    members:   
+      - esx01_vmhba67      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx01_V9100conti_vmhba71   
+    members:   
+      - esx01_vmhba71      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx01_svc_v9000_conti_vmhba67   
+    members:   
+      - esx01_vmhba67      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx01_svc_v9000_conti_vmhba71   
+    members:   
+      - esx01_vmhba71     
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx01_v7200conti_vmhba67   
+    members:   
+      - esx01_vmhba67      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx01_v7200conti_vmhba71   
+    members:   
+      - esx01_vmhba71      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1 
+  - name:   esx02_V9100conti_vmhba67   
+    members:   
+      - esx02_vmhba67      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx02_V9100conti_vmhba71   
+    members:   
+      - esx02_vmhba71      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx02_svc_v9000conti_vmhba67   
+    members:   
+      - esx02_vmhba67      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx02_svc_v9000conti_vmhba71   
+    members:   
+      - esx02_vmhba71      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx02_v7200conti_vmhba67   
+    members:   
+      - esx02_vmhba67      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx02_v7200conti_vmhba71   
+    members:   
+      - esx02_vmhba71      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx03_V9100conti_vmhba67   
+    members:   
+      - esx03_vmhba67      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx03_V9100conti_vmhba71   
+    members:   
+      - esx03_vmhba71      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx03_svc_v9000_conti_vmhba67   
+    members:   
+      - esx03_vmhba67      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx03_svc_v9000_conti_vmhba71   
+    members:   
+      - esx03_vmhba71      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx03_v7200conti_vmhba67   
+    members:   
+      - esx03_vmhba67      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx03_v7200conti_vmhba71   
+    members:   
+      - esx03_vmhba71      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx04_V9100conti_vmhba67   
+    members:   
+      - esx04_vmhba67      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx04_V9100conti_vmhba71   
+    members:   
+      - esx04_vmhba71      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx04_svc_v9000_conti_vmhba67   
+    members:   
+      - esx04_vmhba67      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx04_svc_v9000_conti_vmhba71   
+    members:   
+      - esx04_vmhba71      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx04_v7200conti_vmhba67   
+    members:   
+      - esx04_vmhba67      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx04_v7200conti_vmhba71   
+    members:   
+      - esx04_vmhba71      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+
+  - name:   esx05_V9100conti_vmhba67   
+    members:   
+      - esx05_vmhba67      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx05_V9100conti_vmhba71   
+    members:   
+      - esx05_vmhba71      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx05_svc_v9000_conti_vmhba67   
+    members:   
+      - esx05_vmhba67      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx05_svc_v9000_conti_vmhba71   
+    members:   
+      - esx05_vmhba71      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx05_v7200conti_vmhba67   
+    members:   
+      - esx05_vmhba67      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx05_v7200conti_vmhba71   
+    members:   
+      - esx05_vmhba71      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx06_V9100conti_vmhba67   
+    members:   
+      - esx06_vmhba67      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx06_V9100conti_vmhba71   
+    members:   
+      - esx06_vmhba71      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx06_svc_v9000_conti_vmhba67   
+    members:   
+      - esx06_vmhba67      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx06_svc_v9000_conti_vmhba71   
+    members:   
+      - esx06_vmhba71      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx06_v7200conti_vmhba67   
+    members:   
+      - esx06_vmhba67      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx06_v7200conti_vmhba71   
+    members:   
+      - esx06_vmhba71      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx07_V9100conti_vmhba69   
+    members:   
+      - esx07_vmhba69      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx07_V9100conti_vmhba73   
+    members:   
+      - esx07_vmhba73      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx07_svc_v9000_conti_vmhba69   
+    members:   
+      - esx07_vmhba69      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx07_svc_v9000_conti_vmhba73   
+    members:   
+      - esx07_vmhba73      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx07_v7200conti_vmhba69   
+    members:   
+      - esx07_vmhba69      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx07_v7200conti_vmhba73   
+    members:   
+      - esx07_vmhba73      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx08_V9100conti_vmhba67   
+    members:   
+      - esx08_vmhba67      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx08_V9100conti_vmhba71   
+    members:   
+      - esx08_vmhba71      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx08_svc_v9000_conti_vmhba67   
+    members:   
+      - esx08_vmhba67      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx08_svc_v9000_conti_vmhba71   
+    members:   
+      - esx08_vmhba71      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx08_v7200conti_vmhba67   
+    members:   
+      - esx08_vmhba67      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx08_v7200conti_vmhba71   
+    members:   
+      - esx08_vmhba71      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx09_V9100conti_vmhba67   
+    members:   
+      - esx09_vmhba67      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx09_V9100conti_vmhba71   
+    members:   
+      - esx09_vmhba71      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx09_svc_v9000_conti_vmhba71   
+    members:   
+      - esx09_vmhba71      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx09_v7200conti_vmhba71   
+    members:   
+      - esx09_vmhba71      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx10_V9100conti_vmhba67   
+    members:   
+      - esx10_vmhba67      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx10_V9100conti_vmhba71   
+    members:   
+      - esx10_vmhba71      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx10_svc_v9000_conti_vmhba67   
+    members:   
+      - esx10_vmhba67      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx10_svc_v9000_conti_vmhba71   
+    members:   
+      - esx10_vmhba71      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx10_v7200conti_vmhba67   
+    members:   
+      - esx10_vmhba67      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx10_v7200conti_vmhba71   
+    members:   
+      - esx10_vmhba71      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx11_V9100conti_vmhba67   
+    members:   
+      - esx11_vmhba67      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx11_V9100conti_vmhba71   
+    members:   
+      - esx11_vmhba71      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx11_svc_v9000_conti_vmhba67   
+    members:   
+      - esx11_vmhba67      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx11_svc_v9000_conti_vmhba71   
+    members:   
+      - esx11_vmhba71      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx11_v7200conti_vmhba67   
+    members:   
+      - esx11_vmhba67      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx11_v7200conti_vmhba71   
+    members:   
+      - esx11_vmhba71      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx12_V9100conti_vmhba67   
+    members:   
+      - esx12_vmhba67      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx12_V9100conti_vmhba71   
+    members:   
+      - esx12_vmhba71      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx12_svc_v9000_conti_vmhba67   
+    members:   
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4         
+  - name:   esx12_svc_v9000_conti_vmhba71   
+    members:   
+      - esx12_vmhba71      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx12_v7200conti_vmhba67   
+    members:    
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1                     
+  - name:   esx12_v7200conti_vmhba71   
+    members:   
+      - esx12_vmhba71      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx13_V9100conti_vmhba67   
+    members:   
+      - esx13_vmhba67      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx13_V9100conti_vmhba71   
+    members:   
+      - esx13_vmhba71      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx13_svc_v9000_conti_vmhba67   
+    members:   
+      - esx13_vmhba67      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx13_svc_v9000_conti_vmhba71   
+    members:   
+      - esx13_vmhba71      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx13_v7200conti_vmhba67   
+    members:   
+      - esx13_vmhba67      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx13_v7200conti_vmhba71   
+    members:   
+      - esx13_vmhba71      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx14_V9100conti_vmhba67   
+    members:   
+      - esx14_vmhba67      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx14_V9100conti_vmhba71   
+    members:   
+      - esx14_vmhba71      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx14_svc_v9000_conti_vmhba67   
+    members:   
+      - esx14_vmhba67      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx14_svc_v9000_conti_vmhba71   
+    members:   
+      - esx14_vmhba71      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx14_v7200conti_vmhba67   
+    members:   
+      - esx14_vmhba67   
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx14_v7200conti_vmhba71   
+    members:   
+      - esx14_vmhba71      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx15_V9100conti_vmhba67   
+    members:   
+      - esx15_vmhba67      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx15_V9100conti_vmhba71   
+    members:   
+      - esx15_vmhba71      
+      - FS9100_Contix86_C2_P2      
+      - FS9100_Contix86_C1_P2               
+  - name:   esx15_svc_v9000_conti_vmhba67   
+    members:   
+      - esx15_vmhba67      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx15_svc_v9000_conti_vmhba71   
+    members:   
+      - esx15_vmhba71      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx15_v7200conti_vmhba67   
+    members:   
+      - esx15_vmhba67      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx15_v7200conti_vmhba71   
+    members:   
+      - esx15_vmhba71      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1                       
+  - name:   esx34_vmhba65_V7300F   
+    members:   
+      - esx34_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx34_vmhba65_V7300F1   
+    members:   
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4      
+      - esx34_vmhba65                        
+  - name:   esx34_vmhba69_V7300F   
+    members:   
+      - esx34_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx34_vmhba69_V7300F1   
+    members:   
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4      
+      - esx34_vmhba69                      
+  - name:   esx35_vmhba65_V7300F   
+    members:   
+      - esx35_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4        
+  - name:   esx35_vmhba65_V7300F1   
+    members:   
+      - esx35_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx35_vmhba69_V7300F   
+    members:   
+      - esx35_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4        
+  - name:   esx35_vmhba69_V7300F1   
+    members:   
+      - esx35_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx36_vmhba65_V7300F   
+    members:   
+      - esx36_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx36_vmhba65_V7300F1   
+    members:   
+      - esx36_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                    
+  - name:   esx36_vmhba69_V7300F   
+    members:   
+      - esx36_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx36_vmhba69_V7300F1   
+    members:   
+      - esx36_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx37_vmhba65_V7300F   
+    members:   
+      - esx37_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx37_vmhba65_V7300F1   
+    members:   
+      - esx37_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx37_vmhba69_V7300F   
+    members:   
+      - esx37_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx37_vmhba69_V7300F1   
+    members:   
+      - esx37_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                     
+  - name:   esx38_vmhba65_V7300F   
+    members:   
+      - esx38_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx38_vmhba65_V7300F1   
+    members:   
+      - esx38_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                 
+  - name:   esx38_vmhba69_V7300F   
+    members:   
+      - esx38_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx38_vmhba69_V7300F1   
+    members:   
+      - esx38_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx39_vmhba65_V7300F   
+    members:   
+      - esx39_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx39_vmhba65_V7300F1   
+    members:   
+      - esx39_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx39_vmhba69_V7300F   
+    members:   
+      - esx39_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx39_vmhba69_V7300F1   
+    members:   
+      - esx39_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4 
+  - name:   esx40_vmhba65_V7300F   
+    members:   
+      - esx40_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx40_vmhba65_V7300F1   
+    members:   
+      - esx40_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                
+  - name:   esx40_vmhba69_V7300F   
+    members:   
+      - esx40_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx40_vmhba69_V7300F1   
+    members:   
+      - esx40_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                     
+  - name:   esx41_vmhba65_V7300F   
+    members:   
+      - esx41_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx41_vmhba65_V7300F1   
+    members:   
+      - esx41_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx41_vmhba69_V7300F   
+    members:   
+      - esx41_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx41_vmhba69_V7300F1   
+    members:   
+      - esx41_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4           
+  - name:   esx42_vmhba65_V7300F   
+    members:   
+      - esx42_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx42_vmhba65_V7300F1   
+    members:   
+      - esx42_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx42_vmhba69_V7300F   
+    members:   
+      - esx42_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx42_vmhba69_V7300F1   
+    members:   
+      - esx42_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                
+  - name:   esx43_vmhba65_V7300F   
+    members:   
+      - esx43_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx43_vmhba65_V7300F1   
+    members:   
+      - esx43_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx43_vmhba69_V7300F   
+    members:   
+      - esx43_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx43_vmhba69_V7300F1   
+    members:   
+      - esx43_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx44_vmhba65_V7300F   
+    members:   
+      - esx44_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx44_vmhba65_V7300F1   
+    members:   
+      - esx44_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx44_vmhba69_V7300F   
+    members:   
+      - esx44_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx44_vmhba69_V7300F1   
+    members:   
+      - esx44_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4           
+  - name:   esx45_vmhba65_V7300F   
+    members:   
+      - esx45_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx45_vmhba65_V7300F1   
+    members:   
+      - esx45_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4      
+  - name:   esx45_vmhba69_V7300F   
+    members:   
+      - esx45_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx45_vmhba69_V7300F1   
+    members:   
+      - esx45_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4    
+  - name:   esx46_vmhba65_V7300F   
+    members:   
+      - esx46_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx46_vmhba65_V7300F1   
+    members:   
+      - esx46_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx46_vmhba69_V7300F   
+    members:   
+      - esx46_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx46_vmhba69_V7300F1   
+    members:   
+      - esx46_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                    
+  - name:   esx47_vmhba65_V7300F   
+    members:   
+      - esx47_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx47_vmhba65_V7300F1   
+    members:   
+      - esx47_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                     
+  - name:   esx47_vmhba69_V7300F   
+    members:   
+      - esx47_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx47_vmhba69_V7300F1   
+    members:   
+      - esx47_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx48_vmhba65_V7300F   
+    members:   
+      - esx48_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx48_vmhba65_V7300F1   
+    members:   
+      - esx48_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx48_vmhba69_V7300F   
+    members:   
+      - esx48_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx48_vmhba69_V7300F1   
+    members:   
+      - esx48_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                     
+  - name:   esx49_vmhba65_V7300F   
+    members:   
+      - esx49_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx49_vmhba65_V7300F1   
+    members:   
+      - esx49_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4 
+  - name:   esx49_vmhba69_V7300F   
+    members:   
+      - esx49_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx49_vmhba69_V7300F1   
+    members:   
+      - esx49_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                                                                             
+  - name:   esx65_vmhba65_V7300F   
+    members:   
+      - esx65_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx65_vmhba65_V7300F1   
+    members:   
+      - esx65_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx65_vmhba69_V7300F   
+    members:   
+      - esx65_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx65_vmhba69_V7300F1   
+    members:   
+      - esx65_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx66_vmhba65_V7300F   
+    members:   
+      - esx66_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx66_vmhba65_V7300F1   
+    members:   
+      - esx66_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx66_vmhba69_V7300F   
+    members:   
+      - esx66_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx66_vmhba69_V7300F1   
+    members:   
+      - esx66_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx67_vmhba65_V7300F   
+    members:   
+      - esx67_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx67_vmhba65_V7300F1   
+    members:   
+      - esx67_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                    
+  - name:   esx67_vmhba69_V7300F   
+    members:   
+      - esx67_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx67_vmhba69_V7300F1   
+    members:   
+      - esx67_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                    
+  - name:   esx68_vmhba65_V7300F   
+    members:   
+      - esx68_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx68_vmhba65_V7300F1   
+    members:   
+      - esx68_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx68_vmhba69_V7300F   
+    members:   
+      - esx68_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx68_vmhba69_V7300F1   
+    members:   
+      - esx68_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx69_vmhba65_V7300F   
+    members:   
+      - esx69_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx69_vmhba65_V7300F1   
+    members:   
+      - esx69_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx69_vmhba69_V7300F   
+    members:   
+      - esx69_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx69_vmhba69_V7300F1   
+    members:   
+      - esx69_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                     
+  - name:   esx70_vmhba65_V7300F   
+    members:   
+      - esx70_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx70_vmhba65_V7300F1   
+    members:   
+      - esx70_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx70_vmhba69_V7300F   
+    members:   
+      - esx70_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx70_vmhba69_V7300F1   
+    members:   
+      - esx70_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx71_vmhba65_V7300F   
+    members:   
+      - esx71_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx71_vmhba65_V7300F1   
+    members:   
+      - esx71_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx71_vmhba69_V7300F   
+    members:   
+      - esx71_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx71_vmhba69_V7300F1   
+    members:   
+      - esx71_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx72_vmhba65_V7300F   
+    members:   
+      - esx72_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx72_vmhba65_V7300F1   
+    members:   
+      - esx72_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                 
+  - name:   esx72_vmhba69_V7300F   
+    members:   
+      - esx72_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx72_vmhba69_V7300F1   
+    members:   
+      - esx72_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx73_vmhba65_V7300F   
+    members:   
+      - esx73_vmhba65   
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx73_vmhba65_V7300F1   
+    members:   
+      - esx73_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                     
+  - name:   esx73_vmhba69_V7300F   
+    members:   
+      - esx73_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx73_vmhba69_V7300F1   
+    members:   
+      - esx73_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx74_vmhba65_V7300F   
+    members:   
+      - esx74_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx74_vmhba65_V7300F1   
+    members:   
+      - esx74_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx74_vmhba69_V7300F   
+    members:   
+      - esx74_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx74_vmhba69_V7300F1   
+    members:   
+      - esx74_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx75_vmhba65_V7300F   
+    members:   
+      - esx75_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx75_vmhba65_V7300F1   
+    members:   
+      - esx75_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx75_vmhba69_V7300F   
+    members:   
+      - esx75_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx75_vmhba69_V7300F1   
+    members:
+      -   esx75_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx76_vmhba65_V7300F   
+    members:   
+      - esx76_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx76_vmhba65_V7300F1   
+    members:   
+      - esx76_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                     
+  - name:   esx76_vmhba69_V7300F   
+    members:   
+      - esx76_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx76_vmhba69_V7300F1   
+    members:   
+      - esx76_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx77_vmhba65_V7300F   
+    members:   
+      - esx77_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx77_vmhba65_V7300F1   
+    members:   
+      - esx77_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx77_vmhba69_V7300F   
+    members:   
+      - esx77_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx77_vmhba69_V7300F1   
+    members:   
+      - esx77_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx78_vmhba65_V7300F   
+    members:   
+      - esx78_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx78_vmhba65_V7300F1   
+    members:   
+      - esx78_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                        
+  - name:   esx78_vmhba69_V7300F   
+    members:   
+      - esx78_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx78_vmhba69_V7300F1   
+    members:   
+      - esx78_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx79_vmhba65_V7300F   
+    members:   
+      - esx79_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx79_vmhba65_V7300F1   
+    members:   
+      - esx79_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx79_vmhba69_V7300F   
+    members:   
+      - esx79_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx79_vmhba69_V7300F1   
+    members:   
+      - esx79_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx80_vmhba65_V7300F   
+    members:   
+      - esx80_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx80_vmhba65_V7300F1   
+    members:   
+      - esx80_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx80_vmhba69_V7300F   
+    members:   
+      - esx80_vmhba69      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx80_vmhba69_V7300F1   
+    members:   
+      - esx80_vmhba69      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx81_vmhba3_V7300F   
+    members:   
+      - esx81_vmhba3      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx81_vmhba3_V7300F1   
+    members:   
+      - esx81_vmhba3      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4
+  - name:   esx82_vmhba5_V7300F
+    members:   
+      - esx82_vmhba5      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4 
+  - name:   esx82_vmhba5_V7300F1   
+    members:   
+      - esx82_vmhba5      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx83_vmhba3_V7300F   
+    members:   
+      - esx83_vmhba3      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx83_vmhba3_V7300F1   
+    members:   
+      - esx83_vmhba3      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx84_vmhba3_V7300F   
+    members:   
+      - esx84_vmhba3      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx84_vmhba3_V7300F1   
+    members:   
+      - esx84_vmhba3      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx85_vmhba3_v7300F   
+    members:   
+      - esx85_vmhba3      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx85_vmhba3_v7300F1   
+    members:   
+      - esx85_vmhba3      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                     
+  - name:   esx86_vmhba3_V7300F   
+    members:   
+      - esx86_vmhba3      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx86_vmhba3_V7300F1   
+    members:   
+      - esx86_vmhba3      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx87_vmhba3_V7300F   
+    members:   
+      - esx87_vmhba3      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx87_vmhba3_V7300F1   
+    members:   
+      - esx87_vmhba3      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx88_vmhba3_V7300F   
+    members:    
+      - esx88_vmhba3      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx88_vmhba3_V7300F1   
+    members:   
+      - esx88_vmhba3      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                    
+  - name:   esx89_vmhba3_V7300F   
+    members:   
+      - esx89_vmhba3      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx89_vmhba3_V7300F1   
+    members:   
+      - esx89_vmhba3      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx90_vmhba3_V7300F   
+    members:   
+      - esx90_vmhba3      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx90_vmhba3_V7300F1   
+    members:   
+      - esx90_vmhba3      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx91_vmhba3_V7300F   
+    members:   
+      - esx91_vmhba3      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx91_vmhba3_V7300F1   
+    members:   
+      - esx91_vmhba3      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                       
+  - name:   esx92_vmhba3_V7300F   
+    members:   
+      - esx92_vmhba3      
+      - V7300F_N1_PORT4   
+      - V7300F_N2_PORT4               
+  - name:   esx92_vmhba3_V7300F1   
+    members:   
+      - esx92_vmhba3      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4                      
+  - name:   esx93_vmhba64_V7300F   
+    members:   
+      - esx93_vmhba64      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx93_vmhba64_V7300F1   
+    members:   
+      - esx93_vmhba64      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx93_vmhba65_V7300F   
+    members:   
+      - esx93_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx93_vmhba65_V7300F1   
+    members:   
+      - esx93_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx94_vmhba64_V7300F   
+    members:   
+      - esx94_vmhba64      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx94_vmhba64_V7300F1   
+    members:   
+      - esx94_vmhba64      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx94_vmhba65_V7300F   
+    members:   
+      - esx94_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx94_vmhba65_V7300F1   
+    members:   
+      - esx94_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx95_vmhba64_V7300F   
+    members:   
+      - esx95_vmhba64      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx95_vmhba64_V7300F1   
+    members:   
+      - esx95_vmhba64      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx95_vmhba65_V7300F   
+    members:   
+      - esx95_vmhba65      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx95_vmhba65_V7300F1   
+    members:   
+      - esx95_vmhba65      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx96_svc_v9000conti_vmhba5   
+    members:   
+      - esx96_vmhba5      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx96_svc_v9000conti_vmhba7   
+    members:   
+      - esx96_vmhba7      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2   
+      - SVC_V9000Conti_N1_PORT_3_3   
+      -   SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx96_v7200conti_vmhba5   
+    members:   
+      - esx96_vmhba5   
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx96_v7200conti_vmhba7   
+    members:
+      - esx96_vmhba7   
+      - V7200CONTI_N1_P2
+      - V7200CONTI_N2_P1               
+  - name:   esx96_v9100conti_vmhba5   
+    members:   
+      - esx96_vmhba5      
+      - FS9100_Contix86_C1_P2      
+      - FS9100_Contix86_C2_P2               
+  - name:   esx96_v9100conti_vmhba7   
+    members:   
+      - esx96_vmhba7      
+      - FS9100_Contix86_C1_P2      
+      - FS9100_Contix86_C2_P2               
+  - name:   esx97_svc_v9000conti_vmhba5   
+    members:   
+      - esx97_vmhba5      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx97_svc_v9000conti_vmhba7   
+    members:   
+      - esx97_vmhba7      
+      - SVC_V9000_N1_PORT_7_2   
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4   
+  - name:   esx97_v7200conti_vmhba5   
+    members:   
+      - esx97_vmhba5      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:   esx97_v7200conti_vmhba7   
+    members:   
+      - esx97_vmhba7      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1               
+  - name:  esx97_v9100conti_vmhba5   
+    members:   
+      - esx97_vmhba5      
+      - FS9100_Contix86_C1_P2      
+      -  FS9100_Contix86_C2_P2               
+  - name:   esx97_v9100conti_vmhba7   
+    members:   
+      - esx97_vmhba7      
+      - FS9100_Contix86_C1_P2      
+      - FS9100_Contix86_C2_P2               
+  - name:   F1_ARCSERVER_P1_V7000F   
+    members:   
+      - ARCSERVER_P1
+      - V7000F_N1_PORT1
+      - V7000F_N2_PORT1             
+  - name:   F1_VIOS_1_P1_C2_T1_SVC_V9000   
+    members:   
+      - SVC_V9000_N1_PORT_7_2
+      - SVC_V9000_N2_PORT_7_2
+      - SVC_V9000Conti_N1_PORT_3_3
+      - SVC_V9000Conti_N1_PORT_4_4
+      - VIOS_1_P1_C2_T1 
+  - name:   F1_VIOS_2_P2_C1_T1_SVC_V9000   
+    members:   
+      - SVC_V9000_N1_PORT_7_2
+      - SVC_V9000_N2_PORT_7_2
+      - SVC_V9000Conti_N1_PORT_3_3
+      - SVC_V9000Conti_N1_PORT_4_4
+      - VIOS_2_P2_C1_T1
+  - name:   F1_ZONA_NETBKP_MSA2040_P2   
+    members:   
+      - HP_MSA_2040_P2
+      - NETBKP_HBA_P2  
+  - name:   F1_ZONA_V7000F_ESXSH01_HBA2   
+    members:   
+      - ESXSH01_H2_P1
+      - V7000F_N2_PORT3 
+  - name:   F1_ZONA_V7000F_ESXSH02_HBA1   
+    members:   
+      - ESXSH02_H1_P1
+      - V7000F_N2_PORT3 
+  - name:   TAPECONTI_TS4300DRIVE2_PRD_TAPE_P2_C4_T1   
+    members:   
+      - PRD_TAPE_P2_C4_T1
+      - TAPECONTI_TS4300DRIVE2 
+  - name:   TAPE_PROD_INTDESA_CONTI   
+    members:
+      - Desa_VIOS1_fcs0_1
+      - TAPE_TS3200_PROD_DRIVE1
+  - name:   TAPE_PROD_INTHML_CONTI   
+    members:   
+      - HML_VIOS1_fcs0
+      - TAPE_TS3200_PROD_DRIVE1
+  - name:   VEEAM_BKP_P1_V7300F   
+    members:   
+      - veeam_bkp_hba1
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4      
+
+  - name:   VEEAM_BKP_P1_V7300F1  
+    members:         
+      - veeam_bkp_hba1      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4 
+  - name:   VEEAM_BKP_P2_V7300F   
+    members:   
+      - veeam_bkp_hba2
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4      
+  - name:   VEEAM_BKP_P2_V7300F1
+    members:        
+      - veeam_bkp_hba2      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4 
+  - name:   VEEAM_FS9100_CONTI   
+    members:   
+      - FS9100_Contix86_C1_P2      
+      - FS9100_Contix86_C2_P2      
+      - VEEAN_CONTI_P1  
+  - name:   esx50_vmhba67_V7300F   
+    members:   
+      - esx50_vmhba67      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx50_vmhba67_V7300F1   
+    members:   
+      - esx50_vmhba67      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4  
+  - name:   esx50_vmhba71_V7300F   
+    members:   
+      - esx50_vmhba71      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4      
+  - name:   esx50_vmhba71_V7300F1   
+    members:   
+      - esx50_vmhba71      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4 
+  - name:   esx51_vmhba67_V7300F   
+    members:   
+      - esx51_vmhba67      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx51_vmhba67_V7300F1   
+    members:   
+      - esx51_vmhba67      
+      - V7300F_N3_PORT4 
+      - V7300F_N4_PORT4
+  - name:   esx51_vmhba71_V7300F   
+    members:   
+      - esx51_vmhba71      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx51_vmhba71_V7300F1   
+    members:   
+      - esx51_vmhba71      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4 
+  - name:   esx55_vmhba67_V7300F   
+    members:   
+      - esx55_vmhba67      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx55_vmhba67_V7300F1   
+    members:   
+      - esx55_vmhba67      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4
+  - name:   esx55_vmhba71_V7300F   
+    members:   
+      - esx55_vmhba71      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx55_vmhba71_V7300F1   
+    members:   
+      - esx55_vmhba71      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4 
+  - name:   esx56_vmhba67_V7300F   
+    members:   
+      - esx56_vmhba67      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx56_vmhba67_V7300F1   
+    members:   
+      - esx56_vmhba67      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4 
+  - name:   esx56_vmhba71_V7300F   
+    members:   
+      - esx56_vmhba71      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx56_vmhba71_V7300F1   
+    members:   
+      - esx56_vmhba71      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4
+  - name:   esx57_vmhba67_V7300F   
+    members:   
+      - esx57_vmhba67      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx57_vmhba67_V7300F1   
+    members:   
+      - esx57_vmhba67      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4  
+  - name:   esx57_vmhba71_V7300F   
+    members:       
+      - esx57_vmhba71      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx57_vmhba71_V7300F1   
+    members:   
+      - esx57_vmhba71      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4               
+  - name:   esx58_vmhba67_V7300F   
+    members:   
+      - esx58_vmhba67      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx58_vmhba67_V7300F1   
+    members:   
+      - esx58_vmhba67      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4 
+  - name:   esx58_vmhba71_V7300F   
+    members:   
+      - esx58_vmhba71      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx58_vmhba71_V7300F1   
+    members:   
+      - esx58_vmhba71      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4
+  - name:   esx60_vmhba67_V7300F   
+    members:   
+      - esx60_vmhba67      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx60_vmhba67_V7300F1   
+    members:   
+      - esx60_vmhba67      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4 
+  - name:   esx60_vmhba71_V7300F   
+    members:   
+      - esx60_vmhba71      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx60_vmhba71_V7300F1   
+    members:   
+      - esx60_vmhba71      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4
+  - name:   esx63_vmhba67_V7300F   
+    members:   
+      - esx63_vmhba67      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx63_vmhba67_V7300F1   
+    members:   
+      - esx63_vmhba67      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4 
+  - name:   esx63_vmhba71_V7300F   
+    members:   
+      - esx63_vmhba71      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx63_vmhba71_V7300F1   
+    members:   
+      - esx63_vmhba71      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4 
+  - name:   esx64_vmhba67_V7300F   
+    members:   
+      - esx64_vmhba67      
+      - V7300F_N1_PORT4   
+      - V7300F_N2_PORT4               
+  - name:   esx64_vmhba67_V7300F1   
+    members:   
+      - esx64_vmhba67      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4  
+  - name:   esx64_vmhba71_V7300F   
+    members:   
+      - esx64_vmhba71      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4               
+  - name:   esx64_vmhba71_V7300F1   
+    members:   
+      - esx64_vmhba71      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4 
+  - name:   AIX72_ORCLXNew_PROD_V1_fcs0_V7300F  
+    members:   
+      - AIX72_ORCLXnew_prod_v1_fsc0      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4
+  - name:   AIX72_ORCLXNew_PROD_V1_fcs0_V7300F1   
+    members:   
+      - AIX72_ORCLXnew_prod_v1_fsc0      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4      
+  - name:   AIX72_ORCLXNew_PROD_V2_fcs0_V7300F   
+    members:   
+      - AIX72_ORCLXnew_prod_v2_fsc0      
+      - V7300F_N1_PORT4      
+      - V7300F_N2_PORT4
+  - name:   AIX72_ORCLXNew_PROD_V2_fcs0_V7300F1   
+    members:   
+      - AIX72_ORCLXnew_prod_v2_fsc0      
+      - V7300F_N3_PORT4      
+      - V7300F_N4_PORT4  

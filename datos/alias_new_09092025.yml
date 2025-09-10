@@ -1,0 +1,406 @@
+aliases:
+  - name:   AIX73_DELFOS_DESA_v1_fcs1   
+    wwn:    c0:50:76:0b:c3:a3:00:24
+  - name:   AIX73_DELFOS_DESA_v2_fcs1  
+    wwn:    c0:50:76:0b:c3:a3:00:26
+  - name:   AIX73_DWH_HML_v1_fcs1   
+    wwn:    c0:50:76:0b:c3:a3:00:2e
+  - name:   AIX73_DWH_HML_v2_fcs1   
+    wwn:    c0:50:76:0b:c3:a3:00:2c
+  - name:   AIX73_DWH_PRD_34   
+    wwn:    c0:50:76:0b:c3:a3:00:34
+  - name:   AIX73_DWH_PRD_36   
+    wwn:    c0:50:76:0b:c3:a3:00:36
+  - name:   ESXSH01_H2_P1   
+    wwn:    21:00:34:80:0d:6d:5a:ac
+  - name:   ESXSH02_H1_P1
+    wwn:    21:00:34:80:0d:6d:5b:8a
+  - name:   FS9100_Contix86_C1_P2   
+    wwn:    50:05:07:68:10:16:26:1c
+  - name:   FS9100_Contix86_C1_P3   
+    wwn:    50:05:07:68:10:13:26:1c
+  - name:   FS9100_Contix86_C1_P4   
+    wwn:    50:05:07:68:10:14:26:1c
+  - name:   FS9100_Contix86_C2_P2   
+    wwn:    50:05:07:68:10:16:25:e7
+  - name:   FS9100_Contix86_C2_P3   
+    wwn:    50:05:07:68:10:13:25:e7
+  - name:   FS9100_Contix86_C2_P4
+    wwn:    50:05:07:68:10:14:25:e7
+  - name:   FS9500_Replica_C1P4   
+    wwn:    50:05:07:68:13:18:42:70
+  - name:   FS9500_Replica_C1P4_F   
+    wwn:    50:05:07:68:13:14:42:70
+  - name:   FS9500_Replica_C2P4   
+    wwn:    50:05:07:68:13:18:42:71
+  - name:   FS9500_Replica_C2P4_F   
+    wwn:    50:05:07:68:13:14:42:71
+  - name:   Orclx72_Prod_VIOS1_Fcs1   
+    wwn:    c0:50:76:0b:c3:a3:00:3e
+  - name:   Orclx72_Prod_VIOS2_Fcs1   
+    wwn:    c0:50:76:0b:c3:a3:00:3c
+  - name:   PRDP10_VIOS1_C1   
+    wwn:    21:00:f4:c7:aa:0f:b2:27
+  - name:   PRDP10_VIOS2_C1   
+    wwn:    21:00:f4:c7:aa:0f:b1:be
+  - name:   PRDe950_VIOS1_C8_T2   
+    wwn:    10:00:00:10:9b:c1:10:31
+  - name:   PRDe950_VIOS2_C11_T2   
+    wwn:    10:00:00:10:9b:a0:10:0d
+  - name:   PortReplica_V9000_SVC1   
+    wwn:    50:05:07:68:0c:14:a3:a2
+  - name:   RHAAP1P10_V1_FCS1   
+    wwn:    c0:50:76:0c:6a:da:00:06
+  - name:   RHAAP1P10_V2_FCS1   
+    wwn:    c0:50:76:0c:6a:da:00:04
+  - name:   RHAAP2P10_V1_FCS1   
+    wwn:    c0:50:76:0c:6a:da:00:0e
+  - name:   RHAAP2P10_V2_FCS1   
+    wwn:    c0:50:76:0c:6a:da:00:0c
+  - name:   RHAAP3P10_V1_FCS1   
+    wwn:    c0:50:76:0c:6a:da:00:1c
+  - name:   RHAAP3P10_V2_FCS1   
+    wwn:    c0:50:76:0c:6a:da:00:1e
+  - name:   V7200CONTI_N1_P4   
+    wwn:    50:05:07:68:10:14:85:9d
+  - name:   V7300F_N1_PORT2   
+    wwn:    50:05:07:68:10:12:9f:11
+  - name:   V7300F_N1_PORT4   
+    wwn:    50:05:07:68:10:18:9f:11
+  - name:   V7300F_N1_PORT4_rep   
+    wwn:    50:05:07:68:10:14:9f:11
+  - name:   V7300F_N1_PORT6_REP   
+    wwn:    50:05:07:68:10:22:9f:11
+  - name:   V7300F_N2_PORT2   
+    wwn:    50:05:07:68:10:12:9f:01
+  - name:   V7300F_N2_PORT4   
+    wwn:    50:05:07:68:10:18:9f:01
+  - name:   V7300F_N2_PORT4_rep   
+    wwn:    50:05:07:68:10:14:9f:01
+  - name:   V7300F_N2_PORT6_REP   
+    wwn:    50:05:07:68:10:22:9f:01
+  - name:   V7300F_N3_PORT2   
+    wwn:    50:05:07:68:10:12:9f:29
+  - name:   V7300F_N3_PORT4   
+    wwn:    50:05:07:68:10:18:9f:29
+  - name:   V7300F_N3_PORT4_REP   
+    wwn:    50:05:07:68:10:14:9f:29
+  - name:   V7300F_N3_PORT6_REP   
+    wwn:    50:05:07:68:10:22:9f:29
+  - name:   V7300F_N4_PORT2   
+    wwn:    50:05:07:68:10:12:9f:1e
+  - name:   V7300F_N4_PORT4   
+    wwn:    50:05:07:68:10:18:9f:1e
+  - name:   V7300F_N4_PORT4_REP   
+    wwn:    50:05:07:68:10:14:9f:1e
+  - name:   V7300F_N4_PORT6_REP   
+    wwn:    50:05:07:68:10:22:9f:1e
+  - name:   VEEAMPROXY_CONTI_P1   
+    wwn:    10:00:5c:ba:2c:fb:09:f3
+  - name:   esx01_vmhba67   
+    wwn:    20:01:e0:d8:48:48:8a:94
+  - name:   esx01_vmhba71   
+    wwn:    20:01:e0:d8:48:48:8a:9a
+  - name:   esx02_vmhba67   
+    wwn:    20:01:e0:d8:48:48:90:4c
+  - name:   esx02_vmhba71   
+    wwn:    20:01:e0:d8:48:48:90:52
+  - name:   esx03_vmhba67   
+    wwn:    20:01:e0:d8:48:48:91:03
+  - name:   esx03_vmhba71   
+    wwn:    20:01:e0:d8:48:48:91:09
+  - name:   esx04_vmhba67   
+    wwn:    20:01:e0:d8:48:48:8b:4b
+  - name:   esx04_vmhba71   
+    wwn:    20:01:e0:d8:48:48:8b:51
+  - name:   esx05_vmhba67   
+    wwn:    20:01:e0:d8:48:48:8c:b9
+  - name:   esx05_vmhba71   
+    wwn:    20:01:e0:d8:48:48:8c:bf
+  - name:   esx06_vmhba67   
+    wwn:    20:01:e0:d8:48:48:8c:02
+  - name:   esx06_vmhba71   
+    wwn:    20:01:e0:d8:48:48:8c:08
+  - name:   esx07_vmhba69   
+    wwn:    20:01:e0:d8:48:48:8e:27
+  - name:   esx07_vmhba73   
+    wwn:    20:01:e0:d8:48:48:8e:2d
+  - name:   esx08_vmhba67   
+    wwn:    20:01:e0:d8:48:48:8e:de
+  - name:   esx08_vmhba71   
+    wwn:    20:01:e0:d8:48:48:8e:e4
+  - name:   esx09_vmhba67   
+    wwn:    20:01:e0:d8:48:48:91:ba
+  - name:   esx09_vmhba71   
+    wwn:    20:01:e0:d8:48:48:91:c0
+  - name:   esx10_vmhba67   
+    wwn:    20:01:e0:d8:48:48:92:71
+  - name:   esx10_vmhba71   
+    wwn:    20:01:e0:d8:48:48:92:77
+  - name:   esx11_vmhba67   
+    wwn:    20:01:e0:d8:48:48:93:28
+  - name:   esx11_vmhba71   
+    wwn:    20:01:e0:d8:48:48:93:2e
+  - name:   esx12_vmhba67   
+    wwn:    20:01:e0:d8:48:48:8f:95
+  - name:   esx12_vmhba71   
+    wwn:    20:01:e0:d8:48:48:8f:9b
+  - name:   esx13_vmhba67   
+    wwn:    20:01:e0:d8:48:48:93:df
+  - name:   esx13_vmhba71   
+    wwn:    20:01:e0:d8:48:48:93:e5
+  - name:   esx14_vmhba67   
+    wwn:    20:01:e0:d8:48:48:94:96
+  - name:   esx14_vmhba71   
+    wwn:    20:01:e0:d8:48:48:94:9c
+  - name:   esx15_vmhba67   
+    wwn:    20:01:e0:d8:48:48:95:4d
+  - name:   esx15_vmhba71   
+    wwn:    20:01:e0:d8:48:48:95:53
+  - name:   esx34_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cc:d3
+  - name:   esx34_vmhba69   
+    wwn:    20:01:f4:02:70:5d:cd:a7
+  - name:   esx35_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cc:e0
+  - name:   esx35_vmhba69   
+    wwn:    20:01:f4:02:70:5d:ce:5e
+  - name:   esx36_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cc:ed
+  - name:   esx36_vmhba69   
+    wwn:    20:01:f4:02:70:5d:cf:15
+  - name:   esx37_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cc:fa
+  - name:   esx37_vmhba69   
+    wwn:    20:01:f4:02:70:5d:cf:cc
+  - name:   esx38_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cd:07
+  - name:   esx38_vmhba69   
+    wwn:    20:01:f4:02:70:5d:d0:83
+  - name:   esx39_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cd:14
+  - name:   esx39_vmhba69   
+    wwn:    20:01:f4:02:70:5d:d1:3a
+  - name:   esx40_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cd:21
+  - name:   esx40_vmhba69   
+    wwn:    20:01:f4:02:70:5d:d1:f1
+  - name:   esx41_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cd:2e
+  - name:   esx41_vmhba69   
+    wwn:    20:01:f4:02:70:5d:d2:a8
+  - name:   esx42_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cd:3b
+  - name:   esx42_vmhba69   
+    wwn:    20:01:f4:02:70:5d:d3:5f
+  - name:   esx43_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cd:48
+  - name:   esx43_vmhba69   
+    wwn:    20:01:f4:02:70:5d:d4:16
+  - name:   esx44_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cd:55
+  - name:   esx44_vmhba69   
+    wwn:    20:01:f4:02:70:5d:d4:cd
+  - name:   esx45_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cd:62
+  - name:   esx45_vmhba69   
+    wwn:    20:01:f4:02:70:5d:d5:84
+  - name:   esx46_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cd:6f
+  - name:   esx46_vmhba69   
+    wwn:    20:01:f4:02:70:5d:d6:3b
+  - name:   esx47_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cd:7c
+  - name:   esx47_vmhba69   
+    wwn:    20:01:f4:02:70:5d:d6:f2
+  - name:   esx48_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cd:89
+  - name:   esx48_vmhba69   
+    wwn:    20:01:f4:02:70:5d:d7:a9
+  - name:   esx49_vmhba65   
+    wwn:    20:01:f4:02:70:5d:cd:96
+  - name:   esx49_vmhba69   
+    wwn:    20:01:f4:02:70:5d:d8:60
+  - name:   esx65_vmhba65   
+    wwn:    20:01:a4:1f:72:af:65:43
+  - name:   esx65_vmhba69   
+    wwn:    20:01:a4:1f:72:af:66:17
+  - name:   esx66_vmhba65   
+    wwn:    20:01:a4:1f:72:af:65:50
+  - name:   esx66_vmhba69   
+    wwn:    20:01:a4:1f:72:af:66:ce
+  - name:   esx67_vmhba65   
+    wwn:    20:01:a4:1f:72:af:65:5d
+  - name:   esx67_vmhba69   
+    wwn:    20:01:a4:1f:72:af:67:85
+  - name:   esx68_vmhba65   
+    wwn:    20:01:a4:1f:72:af:65:6a
+  - name:   esx68_vmhba69   
+    wwn:    20:01:a4:1f:72:af:68:3c
+  - name:   esx69_vmhba65   
+    wwn:    20:01:34:80:0d:28:0d:b1
+  - name:   esx69_vmhba69   
+    wwn:    20:01:34:80:0d:28:0d:b5
+  - name:   esx70_vmhba65   
+    wwn:    20:01:a4:1f:72:af:65:84
+  - name:   esx70_vmhba69   
+    wwn:    20:01:a4:1f:72:af:69:aa
+  - name:   esx71_vmhba65   
+    wwn:    20:01:a4:1f:72:af:65:91
+  - name:   esx71_vmhba69   
+    wwn:    20:01:a4:1f:72:af:6a:61
+  - name:   esx72_vmhba65   
+    wwn:    20:01:a4:1f:72:af:65:9e
+  - name:   esx72_vmhba69   
+    wwn:    20:01:a4:1f:72:af:6b:18
+  - name:   esx73_vmhba65   
+    wwn:    20:01:a4:1f:72:af:65:ab
+  - name:   esx73_vmhba69   
+    wwn:    20:01:a4:1f:72:af:6b:cf
+  - name:   esx74_vmhba65   
+    wwn:    20:01:a4:1f:72:af:65:b8
+  - name:   esx74_vmhba69   
+    wwn:    20:01:a4:1f:72:af:6c:86
+  - name:   esx75_vmhba65   
+    wwn:    20:01:a4:1f:72:af:65:c5
+  - name:   esx75_vmhba69   
+    wwn:    20:01:a4:1f:72:af:6d:3d
+  - name:   esx76_vmhba65   
+    wwn:    20:01:a4:1f:72:af:65:d2
+  - name:   esx76_vmhba69   
+    wwn:    20:01:a4:1f:72:af:6d:f4
+  - name:   esx77_vmhba65   
+    wwn:    20:01:a4:1f:72:af:65:df
+  - name:   esx77_vmhba69   
+    wwn:    20:01:a4:1f:72:af:6e:ab
+  - name:   esx78_vmhba65   
+    wwn:    20:01:a4:1f:72:af:65:ec
+  - name:   esx78_vmhba69   
+    wwn:    20:01:a4:1f:72:af:6f:62
+  - name:   esx79_vmhba65   
+    wwn:    20:01:a4:1f:72:af:65:f9
+  - name:   esx79_vmhba69   
+    wwn:    20:01:a4:1f:72:af:70:19
+  - name:   esx80_vmhba65   
+    wwn:    20:01:a4:1f:72:af:66:06
+  - name:   esx80_vmhba69   
+    wwn:    20:01:a4:1f:72:af:70:d0
+  - name:   esx81_vmhba3   
+    wwn:    21:00:f4:c7:aa:09:37:c8
+  - name:   esx82_vmhba5   
+    wwn:    21:00:f4:c7:aa:09:38:26
+  - name:   esx83_vmhba3   
+    wwn:    21:00:f4:c7:aa:09:2a:a2
+  - name:   esx84_vmhba3   
+    wwn:    21:00:f4:c7:aa:09:2a:9e
+  - name:   esx85_vmhba3   
+    wwn:    21:00:f4:c7:aa:09:2a:ae
+  - name:   esx86_vmhba3   
+    wwn:    21:00:f4:c7:aa:09:2a:b0
+  - name:   esx87_vmhba3   
+    wwn:    21:00:f4:c7:aa:09:2d:88
+  - name:   esx88_vmhba3   
+    wwn:    21:00:f4:c7:aa:09:2a:9c
+  - name:   esx89_vmhba3   
+    wwn:    21:00:f4:c7:aa:09:2d:7c
+  - name:   esx90_vmhba3   
+    wwn:    21:00:f4:c7:aa:09:2a:8c
+  - name:   esx91_vmhba3   
+    wwn:    21:00:f4:c7:aa:09:2a:9a
+  - name:   esx92_vmhba3   
+    wwn:    21:00:f4:c7:aa:09:2a:86
+  - name:   esx93_vmhba64   
+    wwn:    10:00:00:10:9b:f4:b3:a2
+  - name:   esx93_vmhba65   
+    wwn:    10:00:00:10:9b:f4:b3:a3
+  - name:   esx94_vmhba64   
+    wwn:    10:00:00:10:9b:f4:b5:e8
+  - name:   esx94_vmhba65   
+    wwn:    10:00:00:10:9b:f4:b5:e9
+  - name:   esx95_vmhba64   
+    wwn:    10:00:00:10:9b:f4:b6:45
+  - name:   esx95_vmhba65   
+    wwn:    10:00:00:10:9b:f4:b6:46
+  - name:   esx96_vmhba5   
+    wwn:    10:00:00:10:9b:f4:b3:88
+  - name:   esx96_vmhba7   
+    wwn:    10:00:00:10:9b:f4:b4:f9
+  - name:   esx97_vmhba5   
+    wwn:    10:00:00:10:9b:f4:b3:af
+  - name:   esx97_vmhba7   
+    wwn:    10:00:00:10:9b:f4:b3:79
+  - name:   veeam_bkpPXY1_hba2   
+    wwn:    10:00:5c:ba:2c:fb:09:c4
+  - name:   veeam_bkpPXY2_hba2   
+    wwn:    10:00:5c:ba:2c:fb:09:d9
+  - name:   ARCSERVER_P1   
+    wwn:    21:00:f4:e9:d4:f5:47:a0
+  - name:   Desa_VIOS1_fcs0_1   
+    wwn:    c0:50:76:0a:43:62:00:5c
+  - name:   HML_VIOS1_fcs0   
+    wwn:    c0:50:76:0a:43:62:00:6a
+  - name:   HP_MSA_2040_P2   
+    wwn:    20:70:00:c0:ff:27:0a:32
+  - name:   NETBKP_HBA_P2   
+    wwn:    50:01:43:80:06:37:df:04
+  - name:   PRD_TAPE_P2_C4_T1   
+    wwn:    10:00:00:90:fa:d6:58:dc
+  - name:   TAPECONTI_TS4300DRIVE2   
+    wwn:    50:00:e1:11:72:35:c0:66
+  - name:   TAPE_TS3200_PROD_DRIVE1   
+    wwn:    20:02:00:0e:11:12:ce:70
+  - name:   V7000F_N1_PORT1   
+    wwn:    50:05:07:68:0b:21:c1:0f
+  - name:   V7000F_N2_PORT1   
+    wwn:    50:05:07:68:0b:21:c1:0e
+  - name:   V7000F_N2_PORT3   
+    wwn:    50:05:07:68:0b:23:c1:0e
+  - name:   VEEAN_CONTI_P1   
+    wwn:    20:00:08:f1:ea:bf:bf:99
+  - name:   VIOS_1_P1_C2_T1   
+    wwn:    10:00:00:10:9b:23:97:f7
+  - name:   esx50_vmhba67   
+    wwn:    20:01:40:5c:fd:7c:57:94
+  - name:   esx50_vmhba71   
+    wwn:    20:01:40:5c:fd:7c:57:9a
+  - name:   esx51_vmhba67   
+    wwn:    20:01:40:5c:fd:7c:58:4b
+  - name:   esx51_vmhba71   
+    wwn:    20:01:40:5c:fd:7c:58:51
+  - name:   esx55_vmhba67   
+    wwn:    20:01:40:5c:fd:7c:5d:4c
+  - name:   esx55_vmhba71   
+    wwn:    20:01:40:5c:fd:7c:5d:52
+  - name:   esx56_vmhba67   
+    wwn:    20:01:40:5c:fd:7c:5e:03
+  - name:   esx56_vmhba71   
+    wwn:    20:01:40:5c:fd:7c:5e:09
+  - name:   esx57_vmhba67   
+    wwn:    20:01:40:5c:fd:7c:5e:ba
+  - name:   esx57_vmhba71   
+    wwn:    20:01:40:5c:fd:7c:5e:c0
+  - name:   esx58_vmhba67   
+    wwn:    20:01:40:5c:fd:7c:5b:27
+  - name:   esx58_vmhba71   
+    wwn:    20:01:40:5c:fd:7c:5b:2d
+  - name:   esx60_vmhba67   
+    wwn:    20:01:40:5c:fd:7c:61:96
+  - name:   esx60_vmhba71   
+    wwn:    20:01:40:5c:fd:7c:61:9c
+  - name:   esx63_vmhba67   
+    wwn:    20:01:40:5c:fd:7c:62:4d
+  - name:   esx63_vmhba71   
+    wwn:    20:01:40:5c:fd:7c:62:53
+  - name:   esx64_vmhba67   
+    wwn:    20:01:40:5c:fd:7c:5f:71
+  - name:   esx64_vmhba71   
+    wwn:    20:01:40:5c:fd:7c:5f:77
+  - name:   veeam_bkp_hba1   
+    wwn:    20:00:08:f1:ea:ba:35:9f
+  - name:   veeam_bkp_hba2   
+    wwn:    20:00:08:f1:ea:bf:ef:54
+  
+  - name:   AIX72_ORCLXnew_prod_v1_fsc0  
+    wwn:    c0:50:76:0b:c3:a3:00:42
+  - name:   AIX72_ORCLXnew_prod_v2_fsc0
+    wwn:    c0:50:76:0b:c3:a3:00:40
