@@ -65,7 +65,7 @@ for zona in zonas:
         #miembros_str = ";".join(f'"{m}"' for m in miembros)
         miembros_str = ";".join(f'{m}' for m in miembros)
         comando = f'zonecreate "{zona_name}", "{miembros_str}"'
-        enviar_comando(shell, comando)
+        shell.send(comando + "\n")
     time.sleep(1)
 
 
@@ -76,7 +76,7 @@ print("Agregando Zonas a la  configuracion ...")
 zonas_str =  ";".join(f'{m["name"]}' for m in zonas)
 comando = f' cfgadd "{fabric_name}", "{zonas_str}"'
 print(comando)
-enviar_comando(shell, comando)
+shell.send(comando + "\n")
 
 print("*************************************")
 print("Guardando configuracion ...")
