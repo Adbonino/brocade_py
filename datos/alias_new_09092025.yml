@@ -398,8 +398,7 @@ aliases:
   - name:   veeam_bkp_hba1   
     wwn:    20:00:08:f1:ea:ba:35:9f
   - name:   veeam_bkp_hba2   
-    wwn:    20:00:08:f1:ea:bf:ef:54
-  
+    wwn:    20:00:08:f1:ea:bf:ef:54  
   - name:   AIX72_ORCLXnew_prod_v1_fsc0  
     wwn:    c0:50:76:0b:c3:a3:00:42
   - name:   AIX72_ORCLXnew_prod_v2_fsc0
