@@ -5,6 +5,19 @@ import yaml
 import sys
 
 
+def read_until_prompt(channel, prompt="switch_fabric_D1:FID128:admin>"):
+    buffer = ""
+    while True:
+        if channel.recv_ready():
+            output = channel.recv(1024).decode('utf-8')
+            buffer += output
+            if buffer.strip().endswith(prompt): # leo hasta que aparece el prompt al final del output.
+                break
+        else:
+            # Si no hay datos, espera un poco para no consumir CPU innecesariamente
+            time.sleep(0.1)
+    return buffer
+
 # Verificamos que se pasaron suficientes argumentos
 if len(sys.argv) != 7:
     print("Uso: script.py host usuario clave fabric_name alias_add.yml zonas_add.yml")
@@ -77,6 +90,13 @@ zonas_str =  ";".join(f'{m["name"]}' for m in zonas)
 comando = f' cfgadd "{fabric_name}", "{zonas_str}"'
 print(comando)
 shell.send(comando + "\n")
+output = read_until_prompt(shell, prompt="switch_fabric_D1:FID128:admin>")
+
+print("fin de comando cfgadd")
+
+
+
+
 
 print("*************************************")
 print("Guardando configuracion ...")
