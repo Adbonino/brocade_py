@@ -124,18 +124,16 @@ shell.send(f'cfgenable "{fabric_name}"\n')
 time.sleep(5)
 
 output = ""
-if shell.recv_ready():
-    output = shell.recv(5000).decode("utf-8")
-    print(output.strip())
+while True:
+    if shell.recv_ready():
+        output += shell.recv(5000).decode("utf-8")
+    # Responder al prompt si es necesario
+    if "Do you want to enable" in output:
+        print("↪ Respondiendo 'y' al prompt de cfgsave...")
+        shell.send("y\n")
+        break
+    time.sleep(0.1)
 
-# Responder al prompt si es necesario
-if "Do you want to enable" in output:
-    print("↪ Respondiendo 'y' al prompt de cfgsave...")
-    shell.send("y\n")
-    time.sleep(2)
-
-output += shell.recv(5000).decode('utf-8')
-print(output)
 
 print("*************************************")
 print("Cerrando configuracion ...")
