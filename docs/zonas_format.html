@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brocade G720</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<div class="w-full overflow-x-hidden">
+<body class="bg-gray-100 text-gray-900 flex min-h-screen overflow-x-hidden max-w-full">
+
+  <div class="flex min-h-screen">
+    
+    <div id="sidebar-container" class="w-64 bg-gray-200 flex-shrink-0"></div>
+
+    <script>
+    // Cargar sidebar
+      fetch('sidebar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('sidebar-container').innerHTML = data;
+
+          // Ahora que el HTML fue insertado, agregamos eventos
+          document.querySelectorAll('#sidebar-container button').forEach(button => {
+            button.addEventListener('click', () => {
+              const id = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+              const menu = document.getElementById(id);
+              if (menu) {
+                menu.classList.toggle('hidden');
+              }
+            });
+          });
+
+          // Resaltar el enlace activo
+          const currentPath = window.location.pathname.split('/').pop();
+          document.querySelectorAll('#sidebar-container a').forEach(link => {
+            if(link.getAttribute('href') === currentPath){
+              link.classList.add('font-bold', 'underline');
+              const parentMenu = link.closest('div[id$="Menu"]');
+              if(parentMenu){
+                parentMenu.classList.remove('hidden');
+              }
+            }
+          });
+        });
+    </script>
+
+
+    <!-- Contenido principal -->
+    <main class="flex-1 p-4">
+      <section class=" mx-auto bg-white p-8 rounded shadow">
+        <h1 class="text-3xl font-bold mb-4 p-4"><span class="text-blue-500"><b>Zonas</b></span> - converción de formatos</h1>
+        <hr class="border-gray-300 mx-4" />
+
+
+
+        <p class="mx-auto p-4">
+            <b>zonas_format.py:</b>  
+        </p>
+
+        <p class="mx-auto p-4">
+          Script de Python que recibe como entrada un archivo <b>.csv</b> con los datos de las zonas y sus correspondientes miembros y permite obtener como salida un archivo en formato <b>.yaml</b>. 
+        </p>
+
+        <h3 class="text-2xl font-bold p-4  mb-0">Ejemplo de uso</h3>
+
+        <div class="mx-auto p-4">
+        <pre class="bg-gray-100 text-sm p-4 rounded overflow-x-auto mb-2">
+          <code>   
+            > <span><b>python .\zonas_format.py -h</b></span>
+              usage: zonas_format.py [-h] csv_in yaml_out  
+
+              Convertir CSV de zonas a YAML con indentación
+
+              positional arguments:
+                csv_in      Archivo CSV de entrada
+                yaml_out    Archivo YAML de salida
+
+              options:
+                -h, --help  show this help message and exit
+            
+            > <span><b>#ejemplo</b></span>
+            > <span><b>python zonas_format.py zonas.csv zonas.yaml</b></span>
+            Archivo YAML generado: alias.yaml
+          </code>
+        </pre>
+        </div>
+
+
+        <!-- Tabla de Parámetros del comando -->
+        <div class=" mx-auto p-4">
+          <h1 class="text-2xl font-bold mb-4">Parámetros</h1>
+      
+          <div class="overflow-x-auto">
+            <table class="min-w-full border border-gray-300 bg-white">
+              <thead>
+                <tr class="bg-gray-100 text-gray-700 text-left text-sm uppercase">
+                  <th class="py-3 px-4 border-b">Nombre</th>
+                  <th class="py-3 px-4 border-b">Tipo</th>
+                  <th class="py-3 px-4 border-b">Descripción</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr class="hover:bg-gray-50">
+                  <td class="py-3 px-4 border-b">csv_in</td>
+                  <td class="py-3 px-4 border-b">String</td>
+                  <td class="py-3 px-4 border-b">Path relativo o absoluto del archivo .csv de entrada con los datos de la zonas y miembros (Ver formato .csv)</td>
+                </tr>
+                <tr class="bg-gray-50 hover:bg-gray-100">
+                  <td class="py-3 px-4 border-b">yaml_out</td>
+                  <td class="py-3 px-4 border-b">String</td>
+                  <td class="py-3 px-4 border-b">Path relativo o absoluto del archivo .yaml de salida en donde se guardaran los datos de las zonas y sus miembros en formato .yaml</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <hr class="border-gray-300 mx-4 my-4" />
+        
+
+   <!-- Tabla de formato .csv -->
+  
+  <h3 class="text-2xl font-bold p-4 mb-0">Fomato de Archivo .cvs de entrada</h3>
+
+  <div class="mx-auto p-4">
+    <pre class="bg-gray-100 text-sm p-4 rounded overflow-x-auto mb-2">
+    <code>    
+      Nombre_zona,miembro[, miembro...]
+
+      zona1,miembro1,miembro2,....,miembroX
+      zona2,miembro1,miembro2,....,miembroX
+      ...
+
+      # ejemplo
+      # cat zonas.csv
+      AIX72_ORCLX_DESA_v1_fcs4_V7200,AIX72_ORCLX_DESA_v1_fcs4,V7200CONTI_N1_P2,V7200CONTI_N2_P1
+      AIX72_ORCLX_DESA_v1_fcs4_V9000,AIX72_ORCLX_DESA_v1_fcs4,SVC_V9000_N1_PORT_7_2,SVC_V9000_N2_PORT_7_2
+      AIX72_ORCLX_DESA_v2_fcs4_V7200,AIX72_ORCLX_DESA_v2_fcs4,V7200CONTI_N1_P2,V7200CONTI_N2_P1
+      ...
+    </code>
+            </pre>
+  </div>
+
+  <div class="overflow-x-auto p-4">
+    <table class="min-w-full border border-gray-300 bg-white">
+      <thead>
+        <tr class="bg-gray-100 text-gray-700 text-left text-sm uppercase">
+          <th class="py-3 px-4 border-b">Nombre</th>
+          <th class="py-3 px-4 border-b">Descripción</th>
+        </tr>
+      </thead>
+      <tbody class="text-gray-700">
+        <tr class="hover:bg-gray-50">
+          <td class="py-3 px-4 border-b">Nombre_zona</td>
+          <td class="py-3 px-4 border-b">Especifica el nombre que se le asigna a la zona</td>
+        </tr>
+        <tr class="bg-gray-50 hover:bg-gray-100">
+          <td class="py-3 px-4 border-b">miembro</td>
+          <td class="py-3 px-4 border-b">Alias o WWN del miembro que formará parte de la zona, puede ser uno o varios separados por coma</td>
+        </tr>
+        <tr class="bg-gray-50 hover:bg-gray-100">
+          <td class="py-3 px-4 border-b">separador</td>
+          <td class="py-3 px-4 border-b">todos los dartos usan como separador: ","</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+        <h2 class="text-2xl font-semibold mb-3 p-4">Ejemplo de archivo de Salida *.yaml</h2>
+
+        <div class="mx-auto mb-4 p-4">
+        <pre class="bg-gray-100 text-sm p-4 rounded overflow-x-auto mb-6">
+<code>    
+zones:
+  - name:   AIX72_ORCLX_DESA_v1_fcs4_V7200
+    members:   
+      - AIX72_ORCLX_DESA_v1_fcs4
+      - V7200CONTI_N1_P2
+      - V7200CONTI_N2_P1
+  - name:   AIX72_ORCLX_DESA_v1_fcs4_V9000
+    members:   
+      - AIX72_ORCLX_DESA_v1_fcs4
+      - SVC_V9000_N1_PORT_7_2
+      - SVC_V9000_N2_PORT_7_2
+      - SVC_V9000Conti_N1_PORT_3_3
+      - SVC_V9000Conti_N1_PORT_4_4
+  - name:   AIX72_ORCLX_DESA_v2_fcs4_V7200
+    members:   
+      - AIX72_ORCLX_DESA_v2_fcs4
+      - V7200CONTI_N1_P2
+      - V7200CONTI_N2_P1
+....
+</code>
+        </pre> 
+        </div>
+
+
+        
+
+        <div class="mt-8">
+          <a href="cfgsave-basic.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+            Siguiente: Variables
+          </a>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</div>
+</html>

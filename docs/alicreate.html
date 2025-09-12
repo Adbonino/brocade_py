@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brocade G720</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <div class="flex min-h-screen">
+    
+    <div id="sidebar-container"></div>
+
+<script>
+  // Cargar sidebar
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('sidebar-container').innerHTML = data;
+
+      // Ahora que el HTML fue insertado, agregamos eventos
+      document.querySelectorAll('#sidebar-container button').forEach(button => {
+        button.addEventListener('click', () => {
+          const id = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+          const menu = document.getElementById(id);
+          if (menu) {
+            menu.classList.toggle('hidden');
+          }
+        });
+      });
+
+      // Resaltar el enlace activo
+      const currentPath = window.location.pathname.split('/').pop();
+      document.querySelectorAll('#sidebar-container a').forEach(link => {
+        if(link.getAttribute('href') === currentPath){
+          link.classList.add('font-bold', 'underline');
+          const parentMenu = link.closest('div[id$="Menu"]');
+          if(parentMenu){
+            parentMenu.classList.remove('hidden');
+          }
+        }
+      });
+    });
+</script>
+
+
+
+
+
+
+
+    <!-- Contenido principal -->
+    <main class="flex-1 p-4">
+      <section class=" mx-auto bg-white p-8 rounded shadow">
+        <h1 class="text-3xl font-bold mb-6"><span class="text-blue-500"><b>alicreate</b></span> - Creación  de alias</h1>
+
+        <p class="mb-4">
+            <b>alicreate</b>: crea un nuevo alias de zona. 
+            La lista de miembros del alias debe tener al menos un miembro (no se permiten listas vacías y no puede ser otro alias). 
+        </p>
+
+        <p class="mb-4">
+            Este comando cambia la configuración definida. Para que el cambio surta efecto, habilite la configuración de zona con el comando <b>cfgEnable</b>. 
+            Para que el cambio se conserve tras reiniciar el switch, guarde la configuración de zona en la memoria no volátil con el comando <b>cfgSave</b>.
+        </p>
+
+        <p class="mb-4">
+            <b>Sintaxis:</b> alicreate "aliName","member[; member...]"
+        </p>
+
+        <p>
+        Se requieren los siguientes parámetros:
+        </p>
+
+        <table class="table-auto w-full border border-gray-300 mb-4 text-sm">
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="border px-4 py-2 text-left">Parámetro</th>
+                <th class="border px-4 py-2 text-left">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border px-4 py-2 font-mono">"aliName"</td>
+                <td class="border px-4 py-2">
+                  Especifica un nombre para el alias, entre comillas dobles. El nombre debe comenzar con una letra y puede incluir letras, números y guiones bajos. Es sensible a mayúsculas/minúsculas. 
+                  Ejemplos: <code>"Ali_1"</code> y <code>"ali_1"</code> son diferentes. Los espacios se ignoran.
+                </td>
+              </tr>
+              <tr>
+                <td class="border px-4 py-2 font-mono">"member"</td>
+                <td class="border px-4 py-2">
+                  Especifica uno o más miembros que se agregarán al alias, entre comillas dobles y separados por punto y coma. Un miembro puede ser:
+                  <ul class="list-disc list-inside mt-1">
+                    <li>Un par de dominio de switch e índice de puerto (<code>switchShow</code> muestra los índices válidos).</li>
+                    <li>Un WWN (World Wide Name).</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+           
+
+
+
+
+
+
+        <h2 class="text-2xl font-semibold mb-3">Ejemplos de uso:</h2>
+        <pre class="bg-gray-100 text-sm p-4 rounded overflow-x-auto mb-6">
+<code>   
+    # Para crear un alias de zona definido por pares de índice de dominio y puerto: 
+    switch:admin> alicreate "array1", "2,32; 2,33; 2,34"
+
+    # Para crear un alias de zona con un miembro definido por WWN.
+    switch:admin> alicreate "array2", "21:00:00:20:37:0c:66:23"
+</code>
+        </pre>
+
+ 
+        <h2 class="text-2xl font-semibold mb-3">Python - Ejemplo de código</h2>
+        <div class="flex space-x-6">
+            <!-- Primer bloque de código -->
+            
+            <div class="w-1/2">
+              <pre class="bg-gray-100 text-sm p-4 rounded overflow-x-auto mb-6 flex-1">
+          <code>
+# script.py
+...
+# === Cargar aliases desde YAML ===
+with open("<span class="bg-yellow-200 text-black px-1 rounded">alias.yaml</span>" , "r") as file:
+    data = yaml.safe_load(file)
+    aliases = data.get("aliases", [])
+...          
+print("*************************************")
+print("Creando Alias ...")
+# === Crear alias en bucle ===
+for alias in aliases:
+    nombre = alias["name"]
+    wwn = alias["wwn"]
+    comando = f'alicreate "{nombre}", "{wwn}"'
+    shell.send(comando + "\n")
+    time.sleep(1)
+          
+...
+          </code>
+              </pre>
+            </div>
+          
+            <!-- Segundo bloque de código -->
+            <div class="w-1/2">
+              
+              <pre class="bg-gray-100 text-sm p-4 rounded overflow-x-auto mb-6 flex-1">
+          <code>
+# <span class="bg-yellow-200 text-black px-1 rounded">alias.yaml</span>            
+aliases:
+    - name:   AIX73_DELFOS_DESA_v1_fcs1   
+      wwn:    c0:50:76:0b:c3:a3:00:24
+    - name:   AIX73_DELFOS_DESA_v2_fcs1  
+      wwn:    c0:50:76:0b:c3:a3:00:26
+    - name:   AIX73_DWH_HML_v1_fcs1   
+      wwn:    c0:50:76:0b:c3:a3:00:2e
+    - name:   AIX73_DWH_HML_v2_fcs1   
+      wwn:    c0:50:76:0b:c3:a3:00:2c
+      ...
+          </code>
+              </pre>
+            </div>
+          </div>
+          
+
+
+
+        <div class="mt-8">
+          <a href="cfgsave-basic.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+            Siguiente: Variables
+          </a>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

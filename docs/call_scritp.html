@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brocade G720</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 flex min-h-screen overflow-x-hidde max-w-full">
+
+  <div class="flex min-h-screen">
+    
+    <div id="sidebar-container" class="w-64 bg-gray-200 flex-shrink-0"></div>
+
+<script>
+  // Cargar sidebar
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('sidebar-container').innerHTML = data;
+
+      // Ahora que el HTML fue insertado, agregamos eventos
+      document.querySelectorAll('#sidebar-container button').forEach(button => {
+        button.addEventListener('click', () => {
+          const id = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+          const menu = document.getElementById(id);
+          if (menu) {
+            menu.classList.toggle('hidden');
+          }
+        });
+      });
+
+      // Resaltar el enlace activo
+      const currentPath = window.location.pathname.split('/').pop();
+      document.querySelectorAll('#sidebar-container a').forEach(link => {
+        if(link.getAttribute('href') === currentPath){
+          link.classList.add('font-bold', 'underline');
+          const parentMenu = link.closest('div[id$="Menu"]');
+          if(parentMenu){
+            parentMenu.classList.remove('hidden');
+          }
+        }
+      });
+    });
+</script>
+
+
+
+
+
+
+
+    <!-- Contenido principal -->
+    <main class="flex-1 p-4">
+      <section class=" mx-auto bg-white p-8 rounded shadow">
+        <h1 class="text-3xl font-bold mb-6"><span class="text-blue-500"><b>Ansible</b></span> - invocar un scripts</h1>
+
+        <p class="mb-4">
+            Este comando guardar la configuración de zona actual. Escribe la configuración definida y el nombre de la configuración vigente en la memoria no volátil de todos los conmutadores de la estructura.
+            La configuración guardada se recarga automáticamente al encender el sistema y, si una configuración estaba vigente en el momento de guardarse, se reinstala con el comando <b>cfgEnable</b>.
+        </p>
+
+        <p class="mb-4">
+            La configuración guardada se recarga automáticamente al encender el sistema y, si una configuración estaba vigente en el momento de guardarse, se reinstala con el comando <b>cfgEnable</b>.
+            Dado que la configuración guardada se recarga al encender el sistema, solo se guardan las configuraciones válidas. 
+        </p>
+
+        <p class="mb-4">
+            El comando <b>cfgSave</b> valida la configuración vigente realizando las mismas pruebas que el comando <b>cfgEnable</b>. Si las pruebas fallan, se muestra un mensaje de error y la configuración no se guarda.
+            Si hay una transacción abierta en otro conmutador de la estructura al ejecutar este comando, la transacción en el otro conmutador se cancela automáticamente. 
+            Si hay transacciones abiertas en la estructura, solo se puede guardar una.
+        </p>
+
+        <p class="mb-4">
+            <b>cfgtransshow --opentrans</b> muestra la lista de todos los dominios en la estructura con transacciones abiertas.
+        </p>
+        
+        <p class="mb-4">
+          <a href="https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline font-medium">
+            Ref: Documentación oficial - Ansible modulo shell
+          </a>
+        </p>       
+
+
+        <h2 class="text-2xl font-semibold mb-3">Ejemplo: inventario.ini</h2>
+        <pre class="bg-gray-100 text-sm p-4 rounded overflow-x-auto mb-6">
+<code>    
+    [brocade_switches]
+    brocade1 ansible_host=10.82.1.90 brocade_user=admin brocade_password=passw0rd ansible_connection=ssh
+</code>
+        </pre>
+        
+
+
+        <div class="bg-white p-6">
+            <h2 class="text-xl font-semibold mb-4">📁 Brocade_G720</h2>
+        
+            <ul class="space-y-2 font-mono text-sm">
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 4a2 2 0 012-2h5l2 2h7a2 2 0 012 2v1H2V4z" />
+                  <path d="M2 7h16v7a2 2 0 01-2 2H4a2 2 0 01-2-2V7z" />
+                </svg>
+                datos/
+              </li>
+              <li class="ml-6 flex items-center">
+                <svg class="w-5 h-5 text-gray-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M4 4h12v12H4z" />
+                </svg>
+                
+                alias_creacion.yml                             <span class="text-blue-500">=> directorio relativo desde creacion.py: ../datos/alias_creacion.yml</span>                
+              </li>
+              <li class="ml-6 flex items-center">
+                <svg class="w-5 h-5 text-gray-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M4 4h12v12H4z" />
+                </svg>
+                
+                zonas_creacion.yml                             <span class="text-blue-500">=> directorio relativo desde creacion.py: ../datos/zonas_creacion.yml</span>
+                
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 4a2 2 0 012-2h5l2 2h7a2 2 0 012 2v1H2V4z" />
+                  <path d="M2 7h16v7a2 2 0 01-2 2H4a2 2 0 01-2-2V7z" />
+                </svg>
+                tools/
+              </li>
+              <li class="ml-6 flex items-center">
+                <svg class="w-5 h-5 text-gray-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M4 4h12v12H4z" />
+                </svg>
+                creacion.py
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-gray-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M4 4h12v12H4z" />
+                </svg>
+                
+                <span class="bg-yellow-200 text-black px-1 rounded">
+                
+                creacion_cfg.yml</span>                        <span class="text-blue-500"> => directorio de trabajo: <b>Brocade_G720/</b></span>
+                
+              </li>
+            </ul>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h2 class="text-2xl font-semibold mb-3">Ejemplo: invocar script de Python desde un playbook de ansible</h2>
+        <pre class="bg-gray-100 text-sm p-4 rounded overflow-x-auto mb-6">
+<code>    
+- name: Agrregar alias y zonas a una configuracion
+  hosts: all
+  gather_facts: no
+
+  # ansible-playbook -i G720_inv.ini creacion.yml -e "arch_alias=../datos/alias_alt.yml arch_zonas=../datos/zonas_alt.yml fabric_name=FABRIC_X" 
+
+  vars:
+    arch_alias: "../datos/alias_creacion.yml"
+    arch_zonas: "../datos/zona_creacion.yml"
+    fabric_name: "FABRIC_D"
+
+  tasks:
+    - name: Ejecutar script creacion de CFG 
+      # ARG: IP, usuario, clave, arch_alias, arch_zonas, fabric_name
+      shell: >
+        ./agregar.py 
+        {{ ansible_host }} 
+        {{ brocade_user }} 
+        {{ brocade_password }}
+        {{ fabric_name }}
+        {{ arch_alias }} 
+        {{ arch_zonas }}
+      args:
+      <span class="bg-yellow-200 text-black px-1 rounded">chdir: ./tools</span>           => cambio de directorio para ejecutar el scritps
+      register: resultado
+      delegate_to: localhost
+
+    - name: Mostrar salida del script
+      debug:
+        var: resultado.stdout
+</code>
+        </pre>
+
+
+
+
+
+        <div class="mt-8">
+          <a href="cfgsave-basic.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+            Siguiente: Variables
+          </a>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

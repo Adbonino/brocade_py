@@ -1,0 +1,60 @@
+<!-- Sidebar -->
+<aside class="w-full h-full bg-gray-300 shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-6">Brocade G720</h2>
+    <nav class="space-y-3 text-blue-700">
+      <a href="index.html" class="block hover:underline">Inicio</a>
+      <a href="intro.html" class="block hover:underline">Introducción</a>
+      <!-- cfgsave -->
+      <div>
+        <button onclick="toggleSubmenu('cfgsaveMenu')" class="block w-full text-left hover:underline">
+          cfgsave 
+        </button>
+        <div id="cfgsaveMenu" class="ml-4 mt-2 space-y-2 hidden ">
+          <a href="cfgsave-basic.html" class="block text-sm hover:underline">Básico</a>
+          <a href="cfgsave-advanced.html" class="block text-sm hover:underline">Avanzado</a>
+          <a href="cfgsave-examples.html" class="block text-sm hover:underline">Ejemplos</a>
+        </div>
+      </div>
+      <a href="variables.html" class="block hover:underline">Variables</a>
+      <!-- Operadores -->
+  <div>
+      <button onclick="toggleSubmenu('comandosMenu')" class="block w-full text-left hover:underline ">
+        Comandos
+      </button>
+      <div id="comandosMenu" class="ml-4 mt-2 space-y-2 hidden">
+        <a href="alicreate.html" class="block text-sm hover:underline">alicreate</a>
+        <a href="cfgadd.html" class="block text-sm hover:underline">cfgadd</a>
+        <a href="cfgcreate.html" class="block text-sm hover:underline">cfgcreate</a>
+        <a href="zonecreate.html" class="block text-sm hover:underline">cfgenable</a>
+        <a href="cfgsave.html" class="block text-sm hover:underline">cfgsave</a>
+        <a href="zonecreate.html" class="block text-sm hover:underline">zonecreate</a>
+      </div>
+    </div>
+      <button onclick="toggleSubmenu('ansibleMenu')" class="block w-full text-left hover:underline ">
+        Ansible 
+      </button>
+      <div id="ansibleMenu" class="ml-4 mt-2 space-y-2 hidden">
+        <a href="call_scritp.html" class="block text-sm hover:underline">Modulo shell</a>
+        <a href="logical.html" class="block text-sm hover:underline">Lógicos</a>
+        <a href="comparison.html" class="block text-sm hover:underline">Comparación</a>
+      </div>
+
+      <button onclick="toggleSubmenu('datosMenu')" class="block w-full text-left hover:underline ">
+        Datos 
+      </button>
+      <div id="datosMenu" class="ml-4 mt-2 space-y-2 hidden">
+        <a href="alias_format.html" class="block text-sm hover:underline">Alias csv a yaml</a>
+        <a href="zonas_format.html" class="block text-sm hover:underline">Zonas csv a yaml</a>
+      </div>
+
+
+    </nav>
+  </aside>
+
+  <!-- Script para todos los submenús -->
+  <script>
+     function toggleSubmenu(id) {
+        const menu = document.getElementById(id);
+        menu.classList.toggle('hidden');
+      }
+  </script>
