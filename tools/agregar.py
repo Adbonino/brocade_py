@@ -4,7 +4,6 @@ import time
 import yaml
 import sys
 
-
 def read_until_prompt(channel, prompt="switch_fabric_D1:FID128:admin>"):
     buffer = ""
     while True:
@@ -12,6 +11,7 @@ def read_until_prompt(channel, prompt="switch_fabric_D1:FID128:admin>"):
             output = channel.recv(1024).decode('utf-8')
             buffer += output
             if buffer.strip().endswith(prompt): # leo hasta que aparece el prompt al final del output.
+                print("Saliendo de read_until_prompt")
                 break
         else:
             # Si no hay datos, espera un poco para no consumir CPU innecesariamente
@@ -90,32 +90,26 @@ zonas_str =  ";".join(f'{m["name"]}' for m in zonas)
 comando = f' cfgadd "{fabric_name}", "{zonas_str}"'
 print(comando)
 shell.send(comando + "\n")
-output = read_until_prompt(shell, prompt="switch_fabric_D1:FID128:admin>")
+output = read_until_prompt(shell, prompt="admin>")
 
 print("fin de comando cfgadd")
-
-
-
-
 
 print("*************************************")
 print("Guardando configuracion ...")
 # === Guardar configuración ===
 shell.send("cfgsave\n")
-time.sleep(5)
 
 output = ""
-if shell.recv_ready():
-    output = shell.recv(5000).decode("utf-8")
-    print(output.strip())
-
-# Responder al prompt si es necesario
-if "Do you want to save" in output:
-    shell.send("y\n")
-    time.sleep(2)
-
-output += shell.recv(5000).decode('utf-8')
-print(output)
+while True:
+    if shell.recv_ready():
+        output += shell.recv(5000).decode("utf-8")
+        print(output.strip())
+    # Responder al prompt si es necesario
+    if "Do you want to save" in output:
+        print("↪ Respondiendo 'y' al prompt de cfgsave...")
+        shell.send("y\n")
+        break
+    time.sleep(0.1)
 
 print("*************************************")
 print("Habilitando configuracion ...")
