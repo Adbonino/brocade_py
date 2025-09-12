@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brocade G720</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <div class="flex min-h-screen">
+    
+    <div id="sidebar-container"></div>
+
+<script>
+  // Cargar sidebar
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('sidebar-container').innerHTML = data;
+
+      // Ahora que el HTML fue insertado, agregamos eventos
+      document.querySelectorAll('#sidebar-container button').forEach(button => {
+        button.addEventListener('click', () => {
+          const id = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+          const menu = document.getElementById(id);
+          if (menu) {
+            menu.classList.toggle('hidden');
+          }
+        });
+      });
+
+      // Resaltar el enlace activo
+      const currentPath = window.location.pathname.split('/').pop();
+      document.querySelectorAll('#sidebar-container a').forEach(link => {
+        if(link.getAttribute('href') === currentPath){
+          link.classList.add('font-bold', 'underline');
+          const parentMenu = link.closest('div[id$="Menu"]');
+          if(parentMenu){
+            parentMenu.classList.remove('hidden');
+          }
+        }
+      });
+    });
+</script>
+
+
+
+
+
+
+
+    <!-- Contenido principal -->
+    <main class="flex-1 p-4">
+      <section class=" mx-auto bg-white p-8 rounded shadow">
+        <h1 class="text-3xl font-bold mb-6"><span class="text-blue-500"><b>cfgadd</b></span> - Agregar zonas a una configuración</h1>
+
+        <p class="mb-4">
+            <b>cfgadd</b>: agrega uno o más miembros a una configuración de zona existente. Este comando modifica la configuración definida. 
+        </p>
+
+        <p class="mb-4">
+            Para que el cambio surta efecto, habilite la configuración con el comando <b>cfgEnable</b>. 
+            Para que el cambio se conserve tras reiniciar el switch, guarde la configuración en la memoria no volátil con el comando <b>fgSave</b>.
+            La lista de miembros del alias debe tener al menos un miembro (no se permiten listas vacías y no puede ser otro alias).             
+        </p>
+
+        <p class="mb-4">
+            La lista de miembros del alias debe tener al menos un miembro (no se permiten listas vacías).             
+        </p>
+
+        <p class="mb-4">
+            <b>Sintaxis:</b> cfgadd "cfgName", "member[; member...]"
+        </p>
+
+        <p>
+        Se requieren los siguientes parámetros:
+        </p>
+
+        <table class="table-auto w-full border border-gray-300 mb-4 text-sm">
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="border px-4 py-2 text-left">Parámetro</th>
+                <th class="border px-4 py-2 text-left">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border px-4 py-2 font-mono">"cfgName"</td>
+                <td class="border px-4 py-2">
+                    Especifique un nombre para la configuración de la zona, entre comillas dobles.
+                </td>
+              </tr>
+              <tr>
+                <td class="border px-4 py-2 font-mono">"member"</td>
+                <td class="border px-4 py-2">
+                    Especifique un miembro de zona o una lista de miembros de zona que se añadirán a la configuración. 
+                    La lista debe estar entre comillas dobles. Los miembros deben estar separados por punto y coma.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+           
+
+
+
+
+
+
+        <h2 class="text-2xl font-semibold mb-3">Ejemplos de uso:</h2>
+        <pre class="bg-gray-100 text-sm p-4 rounded overflow-x-auto mb-6">
+<code>   
+    # Para agregar dos nuevas zonas a la configuración "Test_cfg": 
+    switch:admin> cfgadd "Test_cfg", "greenzone;bluezone"
+</code>
+        </pre>
+
+ 
+        <h2 class="text-2xl font-semibold mb-3">Python - Ejemplo de código</h2>
+        <div class="flex space-x-6">
+            <!-- Primer bloque de código -->
+            
+            <div class="w-1/2">
+              <pre class="bg-gray-100 text-sm p-4 rounded overflow-x-auto mb-6 flex-1">
+          <code>
+# script.py
+# === Cargar zonas ===
+with open("<span class="bg-yellow-200 text-black px-1 rounded">zonas.yaml</span>" , "r") as file:
+    zona_data = yaml.safe_load(file)
+    zonas = zona_data.get("zones", [])
+...
+print("*************************************")
+print("Agregando Zonas a la  configuracion ...")
+# === Crear cgf ===
+# switch:admin> cfgadd "Test_cfg", "greenzone;bluezone"
+zonas_str =  ";".join(f'{m["name"]}' for m in zonas)
+comando = f' cfgadd "{fabric_name}", "{zonas_str}"'
+print(comando)
+shell.send(comando + "\n")
+...
+          </code>
+              </pre>
+            </div>
+          
+            <!-- Segundo bloque de código -->
+            <div class="w-1/2">
+              
+              <pre class="bg-gray-100 text-sm p-4 rounded overflow-x-auto mb-6 flex-1">
+          <code>
+# <span class="bg-yellow-200 text-black px-1 rounded">zonas.yaml</span>            
+zones:   
+  - name:   AIX72_ORCLX_DESA_v1_fcs4_V9000   
+    members:   
+      - AIX72_ORCLX_DESA_v1_fcs4      
+      - SVC_V9000_N1_PORT_7_2      
+      - SVC_V9000_N2_PORT_7_2      
+      - SVC_V9000Conti_N1_PORT_3_3      
+      - SVC_V9000Conti_N1_PORT_4_4
+  - name:   AIX72_ORCLX_DESA_v2_fcs4_V7200   
+    members:   
+      - AIX72_ORCLX_DESA_v2_fcs4      
+      - V7200CONTI_N1_P2      
+      - V7200CONTI_N2_P1  
+      ...
+          </code>
+              </pre>
+            </div>
+          </div>
+          
+
+
+
+        <div class="mt-8">
+          <a href="cfgsave-basic.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+            Siguiente: Variables
+          </a>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

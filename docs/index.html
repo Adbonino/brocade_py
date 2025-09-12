@@ -9,6 +9,44 @@
 <body class="bg-gray-100 text-gray-900">
 
   <div class="flex min-h-screen">
+
+    <div id="header-container"></div>
+
+    <script>
+      // Cargar sidebar
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header-container').innerHTML = data;
+    
+          // Ahora que el HTML fue insertado, agregamos eventos
+          document.querySelectorAll('#header-container button').forEach(button => {
+            button.addEventListener('click', () => {
+              const id = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+              const menu = document.getElementById(id);
+              if (menu) {
+                menu.classList.toggle('hidden');
+              }
+            });
+          });
+    
+          // Resaltar el enlace activo
+          const currentPath = window.location.pathname.split('/').pop();
+          document.querySelectorAll('#header-container a').forEach(link => {
+            if(link.getAttribute('href') === currentPath){
+              link.classList.add('font-bold', 'underline');
+              const parentMenu = link.closest('div[id$="Menu"]');
+              if(parentMenu){
+                parentMenu.classList.remove('hidden');
+              }
+            }
+          });
+        });
+    </script>
+
+
+
+
     
     <div id="sidebar-container"></div>
 
